@@ -10,13 +10,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="ViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EEj-o3-fe0" colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="40" y="438.5" width="334" height="329.5"/>
+                                <rect key="frame" x="40" y="492.5" width="334" height="329.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up or login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03a-kQ-Zah">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -42,7 +42,6 @@
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3d-Mi-pAV"/>
-                                            <segue destination="cM1-Ah-5ZX" kind="show" id="OVn-QQ-y4e"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zf3-Df-1Xp">
@@ -114,11 +113,11 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="LtH-3J-f83" customClass="SignUpViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y7q-0R-SzA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-oa-frx">
-                                <rect key="frame" x="40" y="40" width="334" height="273"/>
+                                <rect key="frame" x="40" y="84" width="334" height="273"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup to ChooseMyPlant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-y5-4QX">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -149,7 +148,6 @@
                                         </state>
                                         <connections>
                                             <action selector="signUpTapped:" destination="LtH-3J-f83" eventType="touchUpInside" id="9qN-0i-Hfy"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="8oD-Qg-fWG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2av-a6-TMp">
@@ -185,13 +183,13 @@
         <!--Home View Controller-->
         <scene sceneID="C4W-ZZ-5Im">
             <objects>
-                <viewController id="cM1-Ah-5ZX" customClass="HomeViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="cM1-Ah-5ZX" customClass="HomeViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4YX-DK-E84">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Fq-RCq">
-                                <rect key="frame" x="141.5" y="406" width="131" height="30"/>
+                                <rect key="frame" x="141.5" y="433" width="131" height="30"/>
                                 <state key="normal" title="Choose Me A Plant"/>
                                 <connections>
                                     <action selector="plantButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="JYN-Qz-P7b"/>
@@ -225,7 +223,4 @@
             <point key="canvasLocation" x="2607" y="92"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="8oD-Qg-fWG"/>
-    </inferredMetricsTieBreakers>
 </document>

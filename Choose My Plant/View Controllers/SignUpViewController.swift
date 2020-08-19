@@ -81,6 +81,7 @@ class SignUpViewController: UIViewController {
                             self.showError("Error saving user data")
                         }
                     }
+                    self.transitionToHome()
           
                 }
             }
@@ -94,5 +95,15 @@ class SignUpViewController: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
         
+    }
+    
+    func transitionToHome() {
+        let ViewController =
+            storyboard?.instantiateViewController(identifier:
+                Constants.Storyboard.ViewController) as?
+            ViewController
+        
+        view.window?.rootViewController = ViewController
+        view.window?.makeKeyAndVisible()
     }
 }
