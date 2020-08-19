@@ -9,8 +9,8 @@
 import XCTest
 
 @testable import Choose_My_Plant
-@testable import Firebase
 
+@testable import FirebaseCore
 
 class RandomiserTests: XCTestCase {
 
@@ -34,7 +34,7 @@ class RandomiserTests: XCTestCase {
         }
     }
     
-    func plantChooser() {
+    func plantation() {
         let plantie = Plants()
         
         let result = plantie.plantChooser()
