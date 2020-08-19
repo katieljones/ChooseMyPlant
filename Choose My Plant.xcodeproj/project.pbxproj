@@ -18,6 +18,7 @@
 		BD2DBA7E24EC19F800516CEA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA7D24EC19F800516CEA /* SignUpViewController.swift */; };
 		BD2DBA8024EC1A0800516CEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA7F24EC1A0800516CEA /* LoginViewController.swift */; };
 		BD2DBA8224EC1A1900516CEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */; };
+		BD2DBA8824ED3EDD00516CEA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA8724ED3EDC00516CEA /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BD2DBA7D24EC19F800516CEA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BD2DBA7F24EC1A0800516CEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BD2DBA8724ED3EDC00516CEA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D774D26444B13F3BCCCE30FC /* Pods_Choose_My_Plant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Choose_My_Plant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A923B0E3EED7613C506CC0 /* Pods-Choose My Plant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.debug.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 		BD2DBA6624EC0F6900516CEA /* Choose My Plant */ = {
 			isa = PBXGroup;
 			children = (
+				BD2DBA8624ED3EB200516CEA /* Helpers */,
 				BD2DBA8324EC1A3700516CEA /* View Controllers */,
 				BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */,
 				BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */,
@@ -109,6 +112,14 @@
 				BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BD2DBA8624ED3EB200516CEA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BD2DBA8724ED3EDC00516CEA /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 			files = (
 				BD2DBA6C24EC0F6900516CEA /* ViewController.swift in Sources */,
 				BD2DBA6824EC0F6900516CEA /* AppDelegate.swift in Sources */,
+				BD2DBA8824ED3EDD00516CEA /* Utilities.swift in Sources */,
 				BD2DBA7E24EC19F800516CEA /* SignUpViewController.swift in Sources */,
 				BD2DBA8024EC1A0800516CEA /* LoginViewController.swift in Sources */,
 				BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */,

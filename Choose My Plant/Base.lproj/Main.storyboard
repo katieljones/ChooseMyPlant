@@ -111,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-oa-frx">
-                                <rect key="frame" x="40" y="40" width="334" height="232.5"/>
+                                <rect key="frame" x="40" y="40" width="334" height="273"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup to ChooseMyPlant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-y5-4QX">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -145,6 +145,12 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="8oD-Qg-fWG"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2av-a6-TMp">
+                                        <rect key="frame" x="0.0" y="252.5" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.96699744462966919" green="0.10231568199564267" blue="0.089987214296300688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -159,6 +165,7 @@
                     <navigationItem key="navigationItem" id="WnU-n2-jf5"/>
                     <connections>
                         <outlet property="emailTextField" destination="REv-Oy-CLA" id="wej-pB-8Eg"/>
+                        <outlet property="errorLabel" destination="2av-a6-TMp" id="cv5-x7-GCE"/>
                         <outlet property="nameTextField" destination="cxv-yR-G8a" id="SQU-yK-3dq"/>
                         <outlet property="passwordTextField" destination="16L-Jg-Kkb" id="xof-Mz-050"/>
                         <outlet property="signUpButton" destination="JsZ-JU-X76" id="ilf-27-hl6"/>
@@ -196,7 +203,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mON-gE-K0G"/>
         <segue reference="8oD-Qg-fWG"/>
     </inferredMetricsTieBreakers>
 </document>
