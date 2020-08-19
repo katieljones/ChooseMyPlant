@@ -9,14 +9,26 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var plantButton: UIButton!
+    
+    
+    @IBOutlet weak var textField: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func plantButtonClick(_ sender: Any) {
+        textField.text = "hello world"
+    }
+    
+    
     /*
     // MARK: - Navigation
 

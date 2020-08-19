@@ -165,16 +165,32 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Fq-RCq">
                                 <rect key="frame" x="141.5" y="406" width="131" height="30"/>
                                 <state key="normal" title="Choose Me A Plant"/>
+                                <connections>
+                                    <action selector="plantButtonClick:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="2gW-0I-2Hr"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Welcome" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="24a-sv-I87">
+                                <rect key="frame" x="87" y="444" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="24a-sv-I87" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="7zq-Sd-yTv"/>
                             <constraint firstItem="pbG-Fq-RCq" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="Gbi-OP-KaT"/>
                             <constraint firstItem="pbG-Fq-RCq" firstAttribute="centerY" secondItem="4YX-DK-E84" secondAttribute="centerY" id="hsk-Re-EdL"/>
+                            <constraint firstItem="24a-sv-I87" firstAttribute="top" secondItem="pbG-Fq-RCq" secondAttribute="bottom" constant="30" id="zJ5-FU-zt2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aeK-gs-c9f"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgE-7Y-WXe"/>
+                    <connections>
+                        <outlet property="plantButton" destination="pbG-Fq-RCq" id="4dU-iW-LXl"/>
+                        <outlet property="textField" destination="24a-sv-I87" id="1Se-8X-hj4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sr-Jy-taM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
