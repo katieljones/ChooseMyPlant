@@ -7,6 +7,7 @@
 //
 
 import UIKit
+ import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -70,7 +71,16 @@ class ViewController: UIViewController {
                     showError(error!)
                 }
                 else {
-                    //create user
+                    let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                     let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                    Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
+                        if error != nil {
+                            self.showError("Credentials do not match.")
+                        }
+                        else {
+                            self.transitionToHome()
+                        }
+                    }
                 }
                 
             }
@@ -81,4 +91,13 @@ class ViewController: UIViewController {
                 errorLabel.alpha = 1
                 
             }
+    func transitionToHome() {
+         let homeViewController =
+             storyboard?.instantiateViewController(identifier:
+                 Constants.Storyboard.homeViewController) as?
+             HomeViewController
+         
+         view.window?.rootViewController = homeViewController
+         view.window?.makeKeyAndVisible()
+     }
 }
