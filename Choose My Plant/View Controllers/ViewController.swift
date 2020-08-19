@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.swift
 //  Choose My Plant
 //
@@ -28,14 +28,23 @@ class ViewController: UIViewController {
        signUpButton:
        UIButton!
     
+    
+    @IBOutlet weak var
+       errorLabel:
+       UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUpElements()
     }
     
+    func setUpElements() {
+        errorLabel.alpha = 0
+    }
     
     @IBAction func
         loginTapped(_ sender: Any) {
+        
     }
     
 

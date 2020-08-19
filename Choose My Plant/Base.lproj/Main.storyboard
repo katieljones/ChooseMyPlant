@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EEj-o3-fe0" colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="40" y="479" width="334" height="289"/>
+                                <rect key="frame" x="40" y="438.5" width="334" height="329.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up or login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03a-kQ-Zah">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -61,6 +61,12 @@
                                             <segue destination="LtH-3J-f83" kind="show" id="mON-gE-K0G"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpp-iS-0v5">
+                                        <rect key="frame" x="0.0" y="309" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.96699744460000003" green="0.10231568200000001" blue="0.089987214300000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
@@ -76,6 +82,7 @@
                     <navigationItem key="navigationItem" id="cW9-aP-737"/>
                     <connections>
                         <outlet property="emailTextField" destination="6zu-IX-k22" id="LD8-xJ-T7q"/>
+                        <outlet property="errorLabel" destination="Cpp-iS-0v5" id="lkn-BE-mHa"/>
                         <outlet property="loginButton" destination="W6O-aX-32t" id="QJp-09-u5s"/>
                         <outlet property="passwordTextField" destination="qwB-d9-uDu" id="hi6-43-tXR"/>
                         <outlet property="signUpButton" destination="xcS-30-ANd" id="2jN-B9-j3y"/>
@@ -203,6 +210,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="mON-gE-K0G"/>
         <segue reference="8oD-Qg-fWG"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -36,7 +36,13 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        
+        errorLabel.alpha = 0
+        
     }
     
     func validateFields() -> String? {
@@ -47,6 +53,13 @@ class SignUpViewController: UIViewController {
         {
             return "Please fill in all fields."
         }
+        
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in:
+            .whitespacesAndNewlines)
+        if Utilities.isPasswordValid(password: cleanedPassword) == false {
+            return "Please make sure your password is at least 8 characters long."
+        }
+        
         return nil
         
     }
@@ -55,7 +68,21 @@ class SignUpViewController: UIViewController {
 
     @IBAction func signUpTapped(_ sender: Any) {
         
+        let error = validateFields()
         
+        if error != nil {
+            showError(error!)
+        }
+        else {
+            //create user
+        }
+        
+    }
+    
+    func showError(_ message:String) {
+        
+        errorLabel.text = message
+        errorLabel.alpha = 1
         
     }
 }
