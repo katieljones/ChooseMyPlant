@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EEj-o3-fe0" colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="40" y="479" width="334" height="289"/>
+                                <rect key="frame" x="40" y="438.5" width="334" height="329.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up or login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03a-kQ-Zah">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -41,6 +41,7 @@
                                         </constraints>
                                         <state key="normal" title="Login"/>
                                         <connections>
+                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3d-Mi-pAV"/>
                                             <segue destination="cM1-Ah-5ZX" kind="show" id="OVn-QQ-y4e"/>
                                         </connections>
                                     </button>
@@ -60,6 +61,12 @@
                                             <segue destination="LtH-3J-f83" kind="show" id="mON-gE-K0G"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpp-iS-0v5">
+                                        <rect key="frame" x="0.0" y="309" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.96699744460000003" green="0.10231568200000001" blue="0.089987214300000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
@@ -73,6 +80,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="cW9-aP-737"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="6zu-IX-k22" id="LD8-xJ-T7q"/>
+                        <outlet property="errorLabel" destination="Cpp-iS-0v5" id="lkn-BE-mHa"/>
+                        <outlet property="loginButton" destination="W6O-aX-32t" id="QJp-09-u5s"/>
+                        <outlet property="passwordTextField" destination="qwB-d9-uDu" id="hi6-43-tXR"/>
+                        <outlet property="signUpButton" destination="xcS-30-ANd" id="2jN-B9-j3y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,13 +112,13 @@
         <!--Sign Up View Controller-->
         <scene sceneID="i19-Lk-OuP">
             <objects>
-                <viewController id="LtH-3J-f83" customClass="SignUpViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="LtH-3J-f83" customClass="SignUpViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y7q-0R-SzA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-oa-frx">
-                                <rect key="frame" x="40" y="40" width="334" height="232.5"/>
+                                <rect key="frame" x="40" y="40" width="334" height="273"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup to ChooseMyPlant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-y5-4QX">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -134,9 +148,16 @@
                                             <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="signUpTapped:" destination="LtH-3J-f83" eventType="touchUpInside" id="9qN-0i-Hfy"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="8oD-Qg-fWG"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2av-a6-TMp">
+                                        <rect key="frame" x="0.0" y="252.5" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.96699744462966919" green="0.10231568199564267" blue="0.089987214296300688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -149,6 +170,13 @@
                         <viewLayoutGuide key="safeArea" id="r7r-IX-H5M"/>
                     </view>
                     <navigationItem key="navigationItem" id="WnU-n2-jf5"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="REv-Oy-CLA" id="wej-pB-8Eg"/>
+                        <outlet property="errorLabel" destination="2av-a6-TMp" id="cv5-x7-GCE"/>
+                        <outlet property="nameTextField" destination="cxv-yR-G8a" id="SQU-yK-3dq"/>
+                        <outlet property="passwordTextField" destination="16L-Jg-Kkb" id="xof-Mz-050"/>
+                        <outlet property="signUpButton" destination="JsZ-JU-X76" id="ilf-27-hl6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8Z-gx-K21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +193,19 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Fq-RCq">
                                 <rect key="frame" x="141.5" y="406" width="131" height="30"/>
                                 <state key="normal" title="Choose Me A Plant"/>
+                                <connections>
+                                    <action selector="plantButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="JYN-Qz-P7b"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Js6-BG-1KO">
+                                <rect key="frame" x="103" y="459" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -175,6 +215,10 @@
                         <viewLayoutGuide key="safeArea" id="aeK-gs-c9f"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgE-7Y-WXe"/>
+                    <connections>
+                        <outlet property="changingTextView" destination="Js6-BG-1KO" id="pvk-Ww-0B9"/>
+                        <outlet property="plantButton" destination="pbG-Fq-RCq" id="sm9-Ns-c1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sr-Jy-taM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
