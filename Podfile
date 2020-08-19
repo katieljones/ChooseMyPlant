@@ -6,8 +6,11 @@ target 'Choose My Plant' do
   use_frameworks!
 
   # Pods for Choose My Plant
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
 
 end

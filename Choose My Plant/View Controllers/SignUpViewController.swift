@@ -7,31 +7,20 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SignUpViewController: UIViewController {
-
     
+    @IBOutlet weak var nameTextField: UITextField!
     
-    @IBOutlet weak var
-      nameTextField:
-      UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
-    @IBOutlet weak var
-      emailTextField:
-      UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var
-      passwordTextField:
-      UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
     
-    @IBOutlet weak var
-      signUpButton:
-      UIButton!
-    
-    
-    @IBOutlet weak var
-      errorLabel:
-      UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,8 +53,6 @@ class SignUpViewController: UIViewController {
         
     }
 
- 
-
     @IBAction func signUpTapped(_ sender: Any) {
         
         let error = validateFields()
@@ -74,7 +61,18 @@ class SignUpViewController: UIViewController {
             showError(error!)
         }
         else {
-            //create user
+             //create user
+            Auth.auth().createUser(withEmail: "", password: "") { (result, err) in
+                //check for errors
+                if error != nil {
+                    
+                    self.showError("Error creating user")
+                }
+                else {
+                    let db = Firestore.firestore()
+                }
+            }
+           
         }
         
     }
