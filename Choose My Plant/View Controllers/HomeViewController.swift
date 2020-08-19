@@ -26,7 +26,13 @@ class HomeViewController: UIViewController {
     
 
     @IBAction func plantButtonTapped(_ sender: Any) {
-        changingTextView.text = "Hello there"
+        changingTextView.text = plantChooser()
+    }
+        
+        func plantChooser() -> String {
+             let plant = ["Winter Cherry", "Elephant Ears", "African Violet", "Beach Spider Lily", "Bird of Paradise", "Flaming Sword", "Lollipop Plant"]
+             return (plant.randomElement()!)
+        
         
     }
 }
