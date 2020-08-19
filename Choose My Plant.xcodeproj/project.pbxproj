@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3440079924ED332A00699AED /* Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3440079824ED332A00699AED /* Randomiser.swift */; };
+		344007A124ED3C2300699AED /* RandomiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344007A024ED3C2300699AED /* RandomiserTests.swift */; };
 		727B1A45EB684AA5DDEA15DE /* Pods_Choose_My_Plant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D774D26444B13F3BCCCE30FC /* Pods_Choose_My_Plant.framework */; };
 		BD2DBA6824EC0F6900516CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */; };
 		BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */; };
@@ -20,8 +22,22 @@
 		BD2DBA8224EC1A1900516CEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		344007A324ED3C2300699AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD2DBA5C24EC0F6900516CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD2DBA6324EC0F6900516CEA;
+			remoteInfo = "Choose My Plant";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		201507A23ECC517F2D884521 /* Pods-Choose My Plant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.release.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.release.xcconfig"; sourceTree = "<group>"; };
+		3440079824ED332A00699AED /* Randomiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomiser.swift; sourceTree = "<group>"; };
+		3440079E24ED3C2300699AED /* RandomiserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomiserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344007A024ED3C2300699AED /* RandomiserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomiserTests.swift; sourceTree = "<group>"; };
+		344007A224ED3C2300699AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD2DBA6424EC0F6900516CEA /* Choose My Plant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Choose My Plant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3440079B24ED3C2300699AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6124EC0F6900516CEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +82,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3440079F24ED3C2300699AED /* RandomiserTests */ = {
+			isa = PBXGroup;
+			children = (
+				344007A024ED3C2300699AED /* RandomiserTests.swift */,
+				344007A224ED3C2300699AED /* Info.plist */,
+			);
+			path = RandomiserTests;
+			sourceTree = "<group>";
+		};
 		70ADE60CE04039FDEB8C2C01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2DBA6624EC0F6900516CEA /* Choose My Plant */,
+				3440079F24ED3C2300699AED /* RandomiserTests */,
 				BD2DBA6524EC0F6900516CEA /* Products */,
 				1706828639876FF116BD184B /* Pods */,
 				70ADE60CE04039FDEB8C2C01 /* Frameworks */,
@@ -81,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2DBA6424EC0F6900516CEA /* Choose My Plant.app */,
+				3440079E24ED3C2300699AED /* RandomiserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +130,7 @@
 				BD2DBA7B24EC116600516CEA /* GoogleService-Info.plist */,
 				BD2DBA7224EC0F6B00516CEA /* LaunchScreen.storyboard */,
 				BD2DBA7524EC0F6B00516CEA /* Info.plist */,
+				3440079824ED332A00699AED /* Randomiser.swift */,
 			);
 			path = "Choose My Plant";
 			sourceTree = "<group>";
@@ -114,6 +149,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3440079D24ED3C2300699AED /* RandomiserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344007A524ED3C2300699AED /* Build configuration list for PBXNativeTarget "RandomiserTests" */;
+			buildPhases = (
+				3440079A24ED3C2300699AED /* Sources */,
+				3440079B24ED3C2300699AED /* Frameworks */,
+				3440079C24ED3C2300699AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344007A424ED3C2300699AED /* PBXTargetDependency */,
+			);
+			name = RandomiserTests;
+			productName = RandomiserTests;
+			productReference = 3440079E24ED3C2300699AED /* RandomiserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BD2DBA6324EC0F6900516CEA /* Choose My Plant */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD2DBA7824EC0F6B00516CEA /* Build configuration list for PBXNativeTarget "Choose My Plant" */;
@@ -143,6 +196,10 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Katie Jones";
 				TargetAttributes = {
+					3440079D24ED3C2300699AED = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BD2DBA6324EC0F6900516CEA;
+					};
 					BD2DBA6324EC0F6900516CEA = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -162,11 +219,19 @@
 			projectRoot = "";
 			targets = (
 				BD2DBA6324EC0F6900516CEA /* Choose My Plant */,
+				3440079D24ED3C2300699AED /* RandomiserTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3440079C24ED3C2300699AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6224EC0F6900516CEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,11 +288,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3440079A24ED3C2300699AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344007A124ED3C2300699AED /* RandomiserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6024EC0F6900516CEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BD2DBA6C24EC0F6900516CEA /* ViewController.swift in Sources */,
+				3440079924ED332A00699AED /* Randomiser.swift in Sources */,
 				BD2DBA6824EC0F6900516CEA /* AppDelegate.swift in Sources */,
 				BD2DBA7E24EC19F800516CEA /* SignUpViewController.swift in Sources */,
 				BD2DBA8024EC1A0800516CEA /* LoginViewController.swift in Sources */,
@@ -237,6 +311,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344007A424ED3C2300699AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD2DBA6324EC0F6900516CEA /* Choose My Plant */;
+			targetProxy = 344007A324ED3C2300699AED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BD2DBA6D24EC0F6900516CEA /* Main.storyboard */ = {
@@ -258,6 +340,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		344007A624ED3C2300699AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RandomiserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plantlife.org.RandomiserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Choose My Plant.app/Choose My Plant";
+			};
+			name = Debug;
+		};
+		344007A724ED3C2300699AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RandomiserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plantlife.org.RandomiserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Choose My Plant.app/Choose My Plant";
+			};
+			name = Release;
+		};
 		BD2DBA7624EC0F6B00516CEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,6 +531,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		344007A524ED3C2300699AED /* Build configuration list for PBXNativeTarget "RandomiserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344007A624ED3C2300699AED /* Debug */,
+				344007A724ED3C2300699AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD2DBA5F24EC0F6900516CEA /* Build configuration list for PBXProject "Choose My Plant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
