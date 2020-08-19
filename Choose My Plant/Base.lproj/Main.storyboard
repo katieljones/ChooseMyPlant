@@ -193,7 +193,19 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Fq-RCq">
                                 <rect key="frame" x="141.5" y="406" width="131" height="30"/>
                                 <state key="normal" title="Choose Me A Plant"/>
+                                <connections>
+                                    <action selector="plantButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="JYN-Qz-P7b"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Js6-BG-1KO">
+                                <rect key="frame" x="103" y="459" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -203,6 +215,10 @@
                         <viewLayoutGuide key="safeArea" id="aeK-gs-c9f"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgE-7Y-WXe"/>
+                    <connections>
+                        <outlet property="changingTextView" destination="Js6-BG-1KO" id="pvk-Ww-0B9"/>
+                        <outlet property="plantButton" destination="pbG-Fq-RCq" id="sm9-Ns-c1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sr-Jy-taM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,7 +226,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mON-gE-K0G"/>
         <segue reference="8oD-Qg-fWG"/>
     </inferredMetricsTieBreakers>
 </document>
