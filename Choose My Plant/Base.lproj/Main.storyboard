@@ -98,7 +98,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="i19-Lk-OuP">
             <objects>
-                <viewController id="LtH-3J-f83" customClass="SignUpViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="LtH-3J-f83" customClass="SignUpViewController" customModule="Choose_My_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y7q-0R-SzA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,6 +134,7 @@
                                             <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="signUpTapped:" destination="LtH-3J-f83" eventType="touchUpInside" id="9qN-0i-Hfy"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="8oD-Qg-fWG"/>
                                         </connections>
                                     </button>
@@ -149,6 +150,12 @@
                         <viewLayoutGuide key="safeArea" id="r7r-IX-H5M"/>
                     </view>
                     <navigationItem key="navigationItem" id="WnU-n2-jf5"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="REv-Oy-CLA" id="wej-pB-8Eg"/>
+                        <outlet property="nameTextField" destination="cxv-yR-G8a" id="SQU-yK-3dq"/>
+                        <outlet property="passwordTextField" destination="16L-Jg-Kkb" id="xof-Mz-050"/>
+                        <outlet property="signUpButton" destination="JsZ-JU-X76" id="ilf-27-hl6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8Z-gx-K21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
