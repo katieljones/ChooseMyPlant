@@ -36,7 +36,7 @@ I would like a button that generates a random selection.
 
 ### MVC Model
 
-![MVC](/MVC.png
+![MVC](/MVC.png)
 
 
 ## Instructions
