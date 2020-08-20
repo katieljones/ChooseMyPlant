@@ -21,9 +21,45 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let url = "https://trefle.io/api/v1/plants?token=eZhnRapssn1kw4iLywcTrjytEYdBq1QAkuy8Mabe3tg"
+        getData(from: url)
     }
     
+    private func getData(from url: String) {
+        let task = URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
+            guard let data = data, error == nil else {
+                print("something went wrong")
+                return
+            }
+            var result: Response?
+            do {
+                result = try JSONDecoder().decode(Response.self, from: data)
+        
+            }
+            catch {
+                debugPrint(error)
+            }
+            guard let json = result else {
+                return
+            
+            }
+            print(json.data)
+            })
+            
+            task.resume()
+    
+        struct Response: Codable {
+            var data:[MyResult]?
+            
+            enum CodingKeys: String, CodingKey {
+                case data
+            }
+        }
+        struct MyResult: Codable {
+            var common_name:String
+        }
+        
+    }
 
     @IBAction func plantButtonTapped(_ sender: Any) {
         changingTextView.text = plantChooser()
@@ -36,3 +72,5 @@ class HomeViewController: UIViewController {
         
     }
 }
+
+
