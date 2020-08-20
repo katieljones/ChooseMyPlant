@@ -93,11 +93,11 @@ class ViewController: UIViewController {
             }
     func transitionToHome() {
          let homeViewController =
-             storyboard?.instantiateViewController(identifier:
+            self.storyboard?.instantiateViewController(identifier:
                  Constants.Storyboard.homeViewController) as?
              HomeViewController
          
-         view.window?.rootViewController = homeViewController
-         view.window?.makeKeyAndVisible()
+        self.view.window?.rootViewController = homeViewController
+        self.view.window?.makeKeyAndVisible()
      }
 }
