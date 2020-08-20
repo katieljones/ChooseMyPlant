@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         getData(from: url)
     }
     
-    private func getData(from url: String) {
+     func getData(from url: String) {
         let task = URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
             guard let data = data, error == nil else {
                 print("something went wrong")
@@ -43,12 +43,14 @@ class HomeViewController: UIViewController {
                 return
             
             }
+           
             print(json.data)
             // save the data to an array
             // use this array to put the randomise method
             })
             
             task.resume()
+      
     
         struct Response: Codable {
             var data:[MyResult]
@@ -59,11 +61,13 @@ class HomeViewController: UIViewController {
         }
         
     }
-
+    
     @IBAction func plantButtonTapped(_ sender: Any) {
         changingTextView.text = plantChooser()
+
     }
-        
+
+    
         func plantChooser() -> String {
              let plant = ["Winter Cherry", "Elephant Ears", "African Violet", "Beach Spider Lily", "Bird of Paradise", "Flaming Sword", "Lollipop Plant"]
              return (plant.randomElement()!)
