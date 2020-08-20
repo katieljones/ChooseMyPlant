@@ -18,6 +18,7 @@
 		BD2DBA7E24EC19F800516CEA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA7D24EC19F800516CEA /* SignUpViewController.swift */; };
 		BD2DBA8224EC1A1900516CEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */; };
 		BD2DBA8824ED3EDD00516CEA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA8724ED3EDC00516CEA /* Utilities.swift */; };
+		BD2DBA8A24ED96C400516CEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA8924ED96C400516CEA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BD2DBA7D24EC19F800516CEA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BD2DBA8724ED3EDC00516CEA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		BD2DBA8924ED96C400516CEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D774D26444B13F3BCCCE30FC /* Pods_Choose_My_Plant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Choose_My_Plant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A923B0E3EED7613C506CC0 /* Pods-Choose My Plant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.debug.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2DBA8724ED3EDC00516CEA /* Utilities.swift */,
+				BD2DBA8924ED96C400516CEA /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				BD2DBA6824EC0F6900516CEA /* AppDelegate.swift in Sources */,
 				BD2DBA8824ED3EDD00516CEA /* Utilities.swift in Sources */,
 				BD2DBA7E24EC19F800516CEA /* SignUpViewController.swift in Sources */,
+				BD2DBA8A24ED96C400516CEA /* Constants.swift in Sources */,
 				BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */,
 				BD2DBA8224EC1A1900516CEA /* HomeViewController.swift in Sources */,
 			);
