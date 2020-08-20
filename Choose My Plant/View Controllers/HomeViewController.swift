@@ -44,16 +44,15 @@ class HomeViewController: UIViewController {
             
             }
             print(json.data)
+            // save the data to an array
+            // use this array to put the randomise method
             })
             
             task.resume()
     
         struct Response: Codable {
-            var data:[MyResult]?
+            var data:[MyResult]
             
-            enum CodingKeys: String, CodingKey {
-                case data
-            }
         }
         struct MyResult: Codable {
             var common_name:String
