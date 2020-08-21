@@ -283,6 +283,11 @@
                         <viewLayoutGuide key="safeArea" id="1W9-s0-o59"/>
                     </view>
                     <navigationItem key="navigationItem" id="0sJ-fR-CRr"/>
+                    <connections>
+                        <outlet property="backButton" destination="hFq-nC-ROx" id="Iv2-vh-4ZA"/>
+                        <outlet property="plantDescriptionTextView" destination="91X-U6-vHi" id="6QP-e7-Gt1"/>
+                        <outlet property="wishlistLabel" destination="ieq-CB-BqE" id="EiM-6O-u1t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bii-fk-ZZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,7 +295,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yMB-hk-asF"/>
+        <segue reference="OTT-oj-SSz"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
 </document>

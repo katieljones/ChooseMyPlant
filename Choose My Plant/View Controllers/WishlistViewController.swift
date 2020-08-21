@@ -10,8 +10,17 @@ import UIKit
 
 class WishlistViewController: UIViewController {
 
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    @IBOutlet weak var wishlistLabel: UILabel!
+    
+    @IBOutlet weak var plantDescriptionTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         
         
