@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
                 debugPrint(error)
             }
             
-            guard let json = result else {
+            guard result != nil else {
                 return
             }
            
