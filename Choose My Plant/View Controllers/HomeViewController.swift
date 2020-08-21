@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
                 debugPrint(error)
             }
             
-            guard let json = result else {
+            guard result != nil else {
                 return
             }
            
@@ -64,15 +64,12 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func plantButtonTapped(_ sender: Any) {
-        changingTextView.text = plantChooser(plantArray: Array())
-
+            changingTextView.text = plantChooser()
+        }
+            func plantChooser() -> String {
+                 let plant = ["Winter Cherry", "Elephant Ears", "African Violet", "Beach Spider Lily", "Bird of Paradise", "Flaming Sword", "Lollipop Plant"]
+                 return (plant.randomElement()!)
+        }
     }
-    
-    func plantChooser(plantArray: Array<Any>) -> String {
-    
-        return plantArray.randomElement()! as! String
-        
-    }
-}
 
 
