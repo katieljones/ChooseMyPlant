@@ -10,13 +10,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var plantButton: UIButton!
     
-    
     @IBOutlet weak var changingTextView: UITextView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +29,7 @@ class HomeViewController: UIViewController {
             }
             var result: Response?
             do {
+
                 let result = try JSONDecoder().decode(Response.self, from: data)
                 
                 for plant in result.data {     print(plant.common_name) }
@@ -59,22 +56,21 @@ class HomeViewController: UIViewController {
              
             // save the data to an array
             // use this array to put the randomise method
+
             })
-            
+        
             task.resume()
 
     }
     
     @IBAction func plantButtonTapped(_ sender: Any) {
-        changingTextView.text = plantChooser()
+        changingTextView.text = plantChooser(plantArray: Array())
 
     }
-
     
-        func plantChooser() -> String {
-             let plant = ["Winter Cherry", "Elephant Ears", "African Violet", "Beach Spider Lily", "Bird of Paradise", "Flaming Sword", "Lollipop Plant"]
-             return (plant.randomElement()!)
-        
+    func plantChooser(plantArray: Array<Any>) -> String {
+    
+        return plantArray.randomElement()! as! String
         
     }
 }
