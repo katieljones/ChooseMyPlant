@@ -14,6 +14,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var changingTextView: UITextView!
     
+    @IBOutlet weak var logoutButton: UIButton!
+    
+    @IBOutlet weak var wishlistButton: UIButton!
+    
+    @IBOutlet weak var saveToWislistButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,6 +71,10 @@ class HomeViewController: UIViewController {
             func plantChooser() -> String {
                  return (plantArray.randomElement()!)
         }
+    
+    
+    @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
     }
+}
 
 

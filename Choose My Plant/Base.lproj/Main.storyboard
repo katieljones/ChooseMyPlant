@@ -223,6 +223,9 @@
                                 <rect key="frame" x="141" y="617" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save to my Wishlist"/>
+                                <connections>
+                                    <action selector="saveToWishlistButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="hVA-bI-g7l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -235,7 +238,9 @@
                     <navigationItem key="navigationItem" id="tgE-7Y-WXe"/>
                     <connections>
                         <outlet property="changingTextView" destination="Js6-BG-1KO" id="pvk-Ww-0B9"/>
+                        <outlet property="logoutButton" destination="76H-5J-YEG" id="3JO-dK-hIy"/>
                         <outlet property="plantButton" destination="pbG-Fq-RCq" id="sm9-Ns-c1g"/>
+                        <outlet property="saveToWislistButton" destination="ciF-lN-O2d" id="i6s-vF-GIN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sr-Jy-taM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -285,7 +290,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OTT-oj-SSz"/>
+        <segue reference="yMB-hk-asF"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
 </document>
