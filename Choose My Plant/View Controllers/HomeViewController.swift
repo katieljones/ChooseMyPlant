@@ -35,7 +35,6 @@ class HomeViewController: UIViewController {
                 let result = try JSONDecoder().decode(Response.self, from: data)
                 
                 for plant in result.data { self.plantArray.append(plant.common_name) }
-                print(self.plantArray)
             }
                 
             catch {
@@ -53,11 +52,6 @@ class HomeViewController: UIViewController {
                 }
                 var data:[Plant]
             }
-
-             
-            // save the data to an array
-            // use this array to put the randomise method
-
             })
         
             task.resume()
