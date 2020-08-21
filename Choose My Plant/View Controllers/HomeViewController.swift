@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
@@ -27,6 +28,7 @@ class HomeViewController: UIViewController {
         let url = "https://trefle.io/api/v1/plants?token=eZhnRapssn1kw4iLywcTrjytEYdBq1QAkuy8Mabe3tg"
         getData(from: url)
     }
+    
     
     var plantArray = [String]()
     
@@ -64,17 +66,24 @@ class HomeViewController: UIViewController {
             task.resume()
 
     }
+    var select = String()
     
     @IBAction func plantButtonTapped(_ sender: Any) {
             changingTextView.text = plantChooser()
         }
             func plantChooser() -> String {
-                 return (plantArray.randomElement()!)
+                 
+                select = plantArray.randomElement()!
+                print("This is a string")
+                return(select)
+                //return( plantArray.randomElement()!)
         }
     
+    var wishList = [String]()
     
     @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
+        self.wishList.append(select)
+        print(wishList)
     }
 }
-
 
