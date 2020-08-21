@@ -29,29 +29,38 @@ class HomeViewController: UIViewController {
             }
             var result: Response?
             do {
-                result = try JSONDecoder().decode(Response.self, from: data)
+
+                let result = try JSONDecoder().decode(Response.self, from: data)
+                
+                for plant in result.data {     print(plant.common_name) }
             }
+                
             catch {
+                print("This is an error")
                 debugPrint(error)
             }
+            
             guard let json = result else {
                 return
-            
             }
            
-            var plantArray = [Any]()
-            plantArray.append(json)
-        
+            struct Response: Codable {
+                struct Plant: Codable {
+                    var common_name:String
+                }
+                var data:[Plant]
+            }
+            
+            
+            //print(json.data)
+             
+            // save the data to an array
+            // use this array to put the randomise method
+
             })
         
             task.resume()
-    
-        struct Response: Codable {
-            var data:[Plant]
-        }
-        struct Plant: Codable {
-            var common_name:String
-        }
+
     }
     
     @IBAction func plantButtonTapped(_ sender: Any) {
