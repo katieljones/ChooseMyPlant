@@ -207,8 +207,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Fq-RCq">
-                                <rect key="frame" x="130" y="404" width="170" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Fq-RCq">
+                                <rect key="frame" x="141.5" y="406" width="131" height="30"/>
                                 <state key="normal" title="Choose Me A Plant">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -248,13 +248,14 @@
                                     <action selector="saveToWishlistButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="hVA-bI-g7l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h72-1d-7Ha">
-                                <rect key="frame" x="252" y="75" width="114" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evM-ai-06y">
+                                <rect key="frame" x="265" y="75" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Wishlist">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TEi-sH-mY9" kind="show" id="OTT-oj-SSz"/>
+                                    <segue destination="TEi-sH-mY9" kind="show" id="1lj-3y-NGK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -263,7 +264,6 @@
                             <constraint firstItem="ciF-lN-O2d" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="42v-WL-a2W"/>
                             <constraint firstItem="pbG-Fq-RCq" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="Gbi-OP-KaT"/>
                             <constraint firstItem="ciF-lN-O2d" firstAttribute="top" secondItem="Js6-BG-1KO" secondAttribute="bottom" constant="160" id="d3h-SN-KK3"/>
-                            <constraint firstItem="h72-1d-7Ha" firstAttribute="centerY" secondItem="4YX-DK-E84" secondAttribute="centerY" id="g5c-b4-158"/>
                             <constraint firstItem="pbG-Fq-RCq" firstAttribute="centerY" secondItem="4YX-DK-E84" secondAttribute="centerY" id="hsk-Re-EdL"/>
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="bottom" secondItem="ciF-lN-O2d" secondAttribute="bottom" constant="50" id="zIx-RA-dAK"/>
                         </constraints>
@@ -326,7 +326,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OTT-oj-SSz"/>
+        <segue reference="1lj-3y-NGK"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
     <resources>
