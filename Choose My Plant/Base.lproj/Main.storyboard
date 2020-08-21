@@ -69,12 +69,16 @@
                                 </subviews>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="yQ5-SF-BdM">
+                                <rect key="frame" x="143" y="220" width="128" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EEj-o3-fe0" secondAttribute="trailing" constant="40" id="4a8-NX-INJ"/>
                             <constraint firstItem="EEj-o3-fe0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Aah-3v-K1O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EEj-o3-fe0" secondAttribute="bottom" constant="40" id="G7h-Q8-Ba2"/>
+                            <constraint firstItem="yQ5-SF-BdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y4P-tK-Thd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -298,4 +302,7 @@
         <segue reference="OTT-oj-SSz"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="app_logo" width="128" height="128"/>
+    </resources>
 </document>
