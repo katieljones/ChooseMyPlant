@@ -68,8 +68,7 @@ class HomeViewController: UIViewController {
             changingTextView.text = plantChooser()
         }
             func plantChooser() -> String {
-                 let plant = ["Winter Cherry", "Elephant Ears", "African Violet", "Beach Spider Lily", "Bird of Paradise", "Flaming Sword", "Lollipop Plant"]
-                 return (plant.randomElement()!)
+                 return (plantArray.randomElement()!)
         }
     }
 
