@@ -71,8 +71,11 @@
                                 </subviews>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="yQ5-SF-BdM">
-                                <rect key="frame" x="143" y="270.5" width="128" height="128"/>
+
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-f8-3IS">
+                                <rect key="frame" x="87" y="213" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91269167090156778" green="1" blue="0.91900415043775507" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -81,7 +84,6 @@
                             <constraint firstItem="EEj-o3-fe0" firstAttribute="top" secondItem="yQ5-SF-BdM" secondAttribute="bottom" constant="40" id="98a-bJ-tTI"/>
                             <constraint firstItem="EEj-o3-fe0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Aah-3v-K1O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EEj-o3-fe0" secondAttribute="bottom" constant="40" id="G7h-Q8-Ba2"/>
-                            <constraint firstItem="yQ5-SF-BdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y4P-tK-Thd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -207,24 +209,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-Fq-RCq">
-                                <rect key="frame" x="130" y="404" width="170" height="34"/>
-                                <state key="normal" title="Choose Me A Plant">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="plantButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="JYN-Qz-P7b"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Js6-BG-1KO">
-                                <rect key="frame" x="103" y="459" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76H-5J-YEG">
-                                <rect key="frame" x="48" y="75" width="78" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76H-5J-YEG">
+                                <rect key="frame" x="15" y="35" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -233,10 +219,10 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="bDe-L5-Gai"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-lN-O2d">
-                                <rect key="frame" x="114.5" y="735" width="185" height="23"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-lN-O2d">
+                                <rect key="frame" x="0.0" y="770" width="414" height="23"/>
                                 <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Save to my Wishlist">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -248,8 +234,28 @@
                                     <action selector="saveToWishlistButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="hVA-bI-g7l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h72-1d-7Ha">
-                                <rect key="frame" x="252" y="75" width="114" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uk-6Y-dW0">
+                                <rect key="frame" x="142" y="401" width="130" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pA2-Zb-bO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Choose My Plant">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="plantButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="WK2-qj-F2q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5W-ZZ-Nre">
+                                <rect key="frame" x="207" y="467" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h72-1d-7Ha">
+                                <rect key="frame" x="280" y="35" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Wishlist">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -260,20 +266,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="4uk-6Y-dW0" firstAttribute="centerY" secondItem="4YX-DK-E84" secondAttribute="centerY" id="3f5-h4-61E"/>
                             <constraint firstItem="ciF-lN-O2d" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="42v-WL-a2W"/>
-                            <constraint firstItem="pbG-Fq-RCq" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="Gbi-OP-KaT"/>
-                            <constraint firstItem="ciF-lN-O2d" firstAttribute="top" secondItem="Js6-BG-1KO" secondAttribute="bottom" constant="160" id="d3h-SN-KK3"/>
-                            <constraint firstItem="h72-1d-7Ha" firstAttribute="centerY" secondItem="4YX-DK-E84" secondAttribute="centerY" id="g5c-b4-158"/>
-                            <constraint firstItem="pbG-Fq-RCq" firstAttribute="centerY" secondItem="4YX-DK-E84" secondAttribute="centerY" id="hsk-Re-EdL"/>
-                            <constraint firstItem="aeK-gs-c9f" firstAttribute="bottom" secondItem="ciF-lN-O2d" secondAttribute="bottom" constant="50" id="zIx-RA-dAK"/>
+                            <constraint firstItem="4uk-6Y-dW0" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="AMX-cp-gRe"/>
+                            <constraint firstItem="n5W-ZZ-Nre" firstAttribute="top" secondItem="4uk-6Y-dW0" secondAttribute="bottom" constant="26" id="Pjh-9m-YLu"/>
+                            <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="ciF-lN-O2d" secondAttribute="trailing" id="RBT-uw-MsO"/>
+                            <constraint firstItem="aeK-gs-c9f" firstAttribute="bottom" secondItem="ciF-lN-O2d" secondAttribute="bottom" id="tlW-Wu-qzE"/>
+                            <constraint firstItem="n5W-ZZ-Nre" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="uVe-ny-i58"/>
+                            <constraint firstItem="ciF-lN-O2d" firstAttribute="leading" secondItem="aeK-gs-c9f" secondAttribute="leading" id="xrN-dU-Pnv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aeK-gs-c9f"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgE-7Y-WXe"/>
                     <connections>
-                        <outlet property="changingTextView" destination="Js6-BG-1KO" id="pvk-Ww-0B9"/>
+                        <outlet property="changingLabel" destination="n5W-ZZ-Nre" id="UZj-mr-f7I"/>
                         <outlet property="logoutButton" destination="76H-5J-YEG" id="3JO-dK-hIy"/>
-                        <outlet property="plantButton" destination="pbG-Fq-RCq" id="sm9-Ns-c1g"/>
                         <outlet property="saveToWislistButton" destination="ciF-lN-O2d" id="i6s-vF-GIN"/>
                     </connections>
                 </viewController>
@@ -290,7 +297,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFq-nC-ROx">
-                                <rect key="frame" x="36" y="75" width="50" height="30"/>
+                                <rect key="frame" x="15" y="35" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
