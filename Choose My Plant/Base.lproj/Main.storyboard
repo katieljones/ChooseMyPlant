@@ -323,6 +323,9 @@
                         <viewLayoutGuide key="safeArea" id="1W9-s0-o59"/>
                     </view>
                     <navigationItem key="navigationItem" id="0sJ-fR-CRr"/>
+                    <connections>
+                        <outlet property="wishlistTextField" destination="91X-U6-vHi" id="DgM-V6-jcV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bii-fk-ZZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,7 +333,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OTT-oj-SSz"/>
+        <segue reference="yMB-hk-asF"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
     <resources>
