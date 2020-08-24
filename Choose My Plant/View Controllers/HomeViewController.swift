@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import SDWebImage
+
 
 class HomeViewController: UIViewController {
 
@@ -21,6 +23,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var saveToWislistButton: UIButton!
     
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,12 +80,16 @@ class HomeViewController: UIViewController {
     @IBAction func plantButtonTapped(_ sender: Any) {
 
         changingLabel.text = plantChooser()
+        
+       
     }
     func plantChooser() -> String {
         
         for (name, image) in zip(plantArray, imageArray) {
+            imageView.sd_setImage(with: URL(string: "\(image)"))
             array.append(contentsOf: ["\(name), \n \(image)"])
             select = array.randomElement()!
+            
 
         }
                 return(select)

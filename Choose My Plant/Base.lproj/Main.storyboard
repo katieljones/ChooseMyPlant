@@ -260,6 +260,10 @@
                                     <segue destination="TEi-sH-mY9" kind="show" id="OTT-oj-SSz"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHb-cg-2hQ">
+                                <rect key="frame" x="95" y="570" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -277,6 +281,7 @@
                     <navigationItem key="navigationItem" id="tgE-7Y-WXe"/>
                     <connections>
                         <outlet property="changingLabel" destination="n5W-ZZ-Nre" id="UZj-mr-f7I"/>
+                        <outlet property="imageView" destination="gHb-cg-2hQ" id="Zb0-oZ-tKl"/>
                         <outlet property="logoutButton" destination="76H-5J-YEG" id="3JO-dK-hIy"/>
                         <outlet property="saveToWislistButton" destination="ciF-lN-O2d" id="i6s-vF-GIN"/>
                     </connections>
