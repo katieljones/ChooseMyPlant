@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var plantButton: UIButton!
     
-    @IBOutlet weak var changingTextView: UITextView!
+    @IBOutlet weak var changingLabel: UILabel!
     
     @IBOutlet weak var logoutButton: UIButton!
     
@@ -73,9 +73,11 @@ class HomeViewController: UIViewController {
     var select = String()
     var array = [String]()
     
+    
     @IBAction func plantButtonTapped(_ sender: Any) {
-        changingTextView.text = plantChooser()
-        }
+
+        changingLabel.text = plantChooser()
+    }
     func plantChooser() -> String {
         
         for (name, image) in zip(plantArray, imageArray) {
@@ -84,7 +86,11 @@ class HomeViewController: UIViewController {
 
         }
                 return(select)
+
         }
+        func plantChooser() -> String {
+        return (plantArray.randomElement()!)
+    }
     
     var wishList = String()
     
