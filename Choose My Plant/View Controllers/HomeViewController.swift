@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var plantButton: UIButton!
     
-    @IBOutlet weak var changingTextView: UITextView!
+    @IBOutlet weak var changingLabel: UILabel!
     
     @IBOutlet weak var logoutButton: UIButton!
     
@@ -65,12 +65,13 @@ class HomeViewController: UIViewController {
 
     }
     
+    
     @IBAction func plantButtonTapped(_ sender: Any) {
-            changingTextView.text = plantChooser()
+        changingLabel.text = plantChooser()
         }
-            func plantChooser() -> String {
-                 return (plantArray.randomElement()!)
-        }
+        func plantChooser() -> String {
+        return (plantArray.randomElement()!)
+    }
     
     
     @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
