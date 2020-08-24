@@ -71,17 +71,14 @@
                                 </subviews>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-f8-3IS">
                                 <rect key="frame" x="87" y="213" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91269167090156778" green="1" blue="0.91900415043775507" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EEj-o3-fe0" secondAttribute="trailing" constant="40" id="4a8-NX-INJ"/>
-                            <constraint firstItem="EEj-o3-fe0" firstAttribute="top" secondItem="yQ5-SF-BdM" secondAttribute="bottom" constant="40" id="98a-bJ-tTI"/>
                             <constraint firstItem="EEj-o3-fe0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Aah-3v-K1O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EEj-o3-fe0" secondAttribute="bottom" constant="40" id="G7h-Q8-Ba2"/>
                         </constraints>

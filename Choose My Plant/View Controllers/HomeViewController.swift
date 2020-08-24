@@ -81,16 +81,13 @@ class HomeViewController: UIViewController {
     func plantChooser() -> String {
         
         for (name, image) in zip(plantArray, imageArray) {
-            array.append(contentsOf: ["\(name), \(image)"])
+            array.append(contentsOf: ["\(name), \n \(image)"])
             select = array.randomElement()!
 
         }
                 return(select)
 
         }
-        func plantChooser() -> String {
-        return (plantArray.randomElement()!)
-    }
     
     var wishList = String()
     
