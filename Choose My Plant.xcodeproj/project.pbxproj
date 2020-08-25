@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80D1EA5EBB6EAF043419F61B /* Pods_Choose_My_Plant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01610994B046718C77DD3668 /* Pods_Choose_My_Plant.framework */; };
+		34D3FE2E24F51F8D003F4380 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3FE2D24F51F8D003F4380 /* TableViewController.swift */; };
+		34D3FE3024F529FB003F4380 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3FE2F24F529FB003F4380 /* TableViewCell.swift */; };
+		727B1A45EB684AA5DDEA15DE /* Pods_Choose_My_Plant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D774D26444B13F3BCCCE30FC /* Pods_Choose_My_Plant.framework */; };
 		BD2DBA6824EC0F6900516CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */; };
 		BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */; };
 		BD2DBA6C24EC0F6900516CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6B24EC0F6900516CEA /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34D3FE2D24F51F8D003F4380 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		34D3FE2F24F529FB003F4380 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		01610994B046718C77DD3668 /* Pods_Choose_My_Plant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Choose_My_Plant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0B72722E436E41C77FB5B3 /* Pods-Choose My Plant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.debug.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.debug.xcconfig"; sourceTree = "<group>"; };
 		7737DBE68DB75FB03590F38A /* Pods-Choose My Plant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.release.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				BD2DBA7D24EC19F800516CEA /* SignUpViewController.swift */,
 				BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */,
 				BD2DBA9124F00CFB00516CEA /* WishlistViewController.swift */,
+				34D3FE2D24F51F8D003F4380 /* TableViewController.swift */,
+				34D3FE2F24F529FB003F4380 /* TableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -253,8 +259,10 @@
 				BD2DBA8824ED3EDD00516CEA /* Utilities.swift in Sources */,
 				BD2DBA7E24EC19F800516CEA /* SignUpViewController.swift in Sources */,
 				BD2DBA8A24ED96C400516CEA /* Constants.swift in Sources */,
+				34D3FE2E24F51F8D003F4380 /* TableViewController.swift in Sources */,
 				BD2DBA8C24EE7C1C00516CEA /* Plantie.swift in Sources */,
 				BD2DBA9224F00CFB00516CEA /* WishlistViewController.swift in Sources */,
+				34D3FE3024F529FB003F4380 /* TableViewCell.swift in Sources */,
 				BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */,
 				BD2DBA8224EC1A1900516CEA /* HomeViewController.swift in Sources */,
 			);

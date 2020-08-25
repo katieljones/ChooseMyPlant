@@ -12,15 +12,10 @@ import Firebase
 class WishlistViewController: UIViewController {
 
     
+    @IBOutlet weak var wishlistTextField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        
-        
-        
       
     }
     
