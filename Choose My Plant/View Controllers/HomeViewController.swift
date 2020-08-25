@@ -75,24 +75,24 @@ class HomeViewController: UIViewController {
     }
     var select = String()
     var array = [String]()
-    
+    var selectedArray = [String]()
     
     @IBAction func plantButtonTapped(_ sender: Any) {
 
         changingLabel.text = plantChooser()
+        imageView.sd_setImage(with: URL(string: "\(selectedArray[1])"))
         
        
     }
     func plantChooser() -> String {
         
         for (name, image) in zip(plantArray, imageArray) {
-            imageView.sd_setImage(with: URL(string: "\(image)"))
-            array.append(contentsOf: ["\(name), \n \(image)"])
+            array.append(contentsOf: ["\(name),\(image)"])
             select = array.randomElement()!
-            
 
         }
-                return(select)
+          selectedArray = select.components(separatedBy: ",")
+          return(selectedArray[0])
 
         }
     
