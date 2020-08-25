@@ -25,6 +25,8 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -96,14 +98,16 @@ class HomeViewController: UIViewController {
 
         }
 
+    var wishList = [String]()
     
     @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
-
-        let db = Firestore.firestore()
-        db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : selectedArray[0], "image" : selectedArray[1]])
-    
+      self.wishList.append(selectedArray[0])
+        print(wishList)
     }
-
+ 
+//    let db = Firestore.firestore()
+//          db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : selectedArray[0], "image" : selectedArray[1]])
+    
 // delete document
 //db.collection("ADD THE NAME OF THE COLLECTION").document("TYPE THE NAME OF THE DOCUMENT").delete()
 
