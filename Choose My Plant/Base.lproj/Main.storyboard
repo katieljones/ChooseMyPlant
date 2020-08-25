@@ -257,7 +257,7 @@
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TEi-sH-mY9" kind="show" id="OTT-oj-SSz"/>
+                                    <segue destination="Ts6-BH-kjs" kind="show" id="98k-oq-6Rt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -290,7 +290,7 @@
             <objects>
                 <viewController storyboardIdentifier="WishVC" id="TEi-sH-mY9" customClass="WishlistViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dS-pU-IY1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFq-nC-ROx">
@@ -325,7 +325,7 @@
             <objects>
                 <tableViewController id="Ts6-BH-kjs" customClass="TableViewController" customModule="Choose_My_Plant" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0nO-72-tIn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -343,7 +343,7 @@
                                                 <constraint firstAttribute="height" constant="76" id="MSi-s4-3op"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1M-k2-sXv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1M-k2-sXv">
                                             <rect key="frame" x="174" y="27.5" width="205" height="25"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="25" id="BQV-OE-4Z5"/>
@@ -395,6 +395,7 @@
                             <outlet property="delegate" destination="Ts6-BH-kjs" id="mzd-x4-AfG"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Ycq-Xa-oer"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0no-ow-Che" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -402,7 +403,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OTT-oj-SSz"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
     <resources>
