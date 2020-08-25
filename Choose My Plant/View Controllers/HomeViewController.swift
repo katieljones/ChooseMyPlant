@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import SDWebImage
+
 
 class HomeViewController: UIViewController {
 
@@ -21,6 +23,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var saveToWislistButton: UIButton!
     
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +52,6 @@ class HomeViewController: UIViewController {
             }
                 
             catch {
-                print("This is an error")
                 debugPrint(error)
             }
             
@@ -72,34 +74,38 @@ class HomeViewController: UIViewController {
     }
     var select = String()
     var array = [String]()
-    
+    var selectedArray = [String]()
     
     @IBAction func plantButtonTapped(_ sender: Any) {
 
         changingLabel.text = plantChooser()
+        imageView.sd_setImage(with: URL(string: "\(selectedArray[1])"))
+       
     }
+    
     func plantChooser() -> String {
         
         for (name, image) in zip(plantArray, imageArray) {
-            array.append(contentsOf: ["\(name), \n \(image)"])
+            array.append(contentsOf: ["\(name),\(image)"])
             select = array.randomElement()!
 
         }
-        print(select)
-                return(select)
-                
+
+          selectedArray = select.components(separatedBy: ",")
+          return(selectedArray[0])
+
         }
-    
-    var wishList = String()
+
     
     @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
 
         let db = Firestore.firestore()
-        let listItems = select.components(separatedBy: ", ")
-        
-        db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : listItems[0], "image" : listItems[1]])
+        db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : selectedArray[0], "image" : selectedArray[1]])
+    
     }
-}
 
 // delete document
 //db.collection("ADD THE NAME OF THE COLLECTION").document("TYPE THE NAME OF THE DOCUMENT").delete()
+
+}
+
