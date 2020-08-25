@@ -52,7 +52,6 @@ class HomeViewController: UIViewController {
             }
                 
             catch {
-                print("This is an error")
                 debugPrint(error)
             }
             
@@ -81,9 +80,9 @@ class HomeViewController: UIViewController {
 
         changingLabel.text = plantChooser()
         imageView.sd_setImage(with: URL(string: "\(selectedArray[1])"))
-        
        
     }
+    
     func plantChooser() -> String {
         
         for (name, image) in zip(plantArray, imageArray) {
@@ -95,12 +94,12 @@ class HomeViewController: UIViewController {
           return(selectedArray[0])
 
         }
-    
-    var wishList = String()
+
     
     @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
-        self.wishList.append(select)
-        print(wishList)
+        let db = Firestore.firestore()
+        db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : selectedArray[0], "image" : selectedArray[1]])
+    
     }
-}
 
+}
