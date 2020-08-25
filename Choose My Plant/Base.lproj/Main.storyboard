@@ -361,8 +361,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="plantImage" destination="5id-6g-c67" id="KKJ-5Q-Tdr"/>
-                                    <outlet property="plantLabel" destination="n1M-k2-sXv" id="kdJ-pQ-keo"/>
+                                    <outlet property="plantImage" destination="5id-6g-c67" id="OcP-2U-4Mk"/>
+                                    <outlet property="plantName" destination="n1M-k2-sXv" id="wAb-g7-bnT"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xlr-qa-fch">
@@ -395,9 +395,6 @@
                             <outlet property="delegate" destination="Ts6-BH-kjs" id="mzd-x4-AfG"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="plantImage" destination="5id-6g-c67" id="P20-Tl-P0t"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0no-ow-Che" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
