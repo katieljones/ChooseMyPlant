@@ -321,52 +321,91 @@
             <point key="canvasLocation" x="3353.6231884057975" y="91.741071428571431"/>
         </scene>
         <!--Table View Controller-->
-        <scene sceneID="Jrx-Bv-tcA">
+        <scene sceneID="tkd-ot-tse">
             <objects>
-                <tableViewController id="VA6-Ao-PSh" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XEg-hV-CVf">
+                <tableViewController id="Ts6-BH-kjs" customClass="TableViewController" customModule="Choose_My_Plant" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0nO-72-tIn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WishlistItem" id="HPf-fs-Q2i">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yXF-qI-FfR" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HPf-fs-Q2i" id="Pr6-7D-OMg">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yXF-qI-FfR" id="2GS-PI-pw9" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5id-6g-c67">
+                                            <rect key="frame" x="12" y="2" width="147" height="76"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="147" id="HzZ-pV-H47"/>
+                                                <constraint firstAttribute="height" constant="76" id="MSi-s4-3op"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1M-k2-sXv">
+                                            <rect key="frame" x="174" y="27.5" width="205" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="BQV-OE-4Z5"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="n1M-k2-sXv" secondAttribute="trailing" constant="15" id="8jS-nL-FQn"/>
+                                        <constraint firstItem="n1M-k2-sXv" firstAttribute="leading" secondItem="5id-6g-c67" secondAttribute="trailing" constant="15" id="LYk-zN-a7l"/>
+                                        <constraint firstItem="5id-6g-c67" firstAttribute="leading" secondItem="2GS-PI-pw9" secondAttribute="leading" constant="12" id="j3f-lu-6u9"/>
+                                        <constraint firstItem="n1M-k2-sXv" firstAttribute="centerY" secondItem="2GS-PI-pw9" secondAttribute="centerY" id="rtV-Em-5lC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="plantImage" destination="5id-6g-c67" id="KKJ-5Q-Tdr"/>
+                                    <outlet property="plantLabel" destination="n1M-k2-sXv" id="kdJ-pQ-keo"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xlr-qa-fch">
+                                <rect key="frame" x="0.0" y="108" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xlr-qa-fch" id="yCp-el-JX6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SDW-pI-aKX">
-                                <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XxK-N7-2Ja">
+                                <rect key="frame" x="0.0" y="188" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SDW-pI-aKX" id="XNJ-us-6ue">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XxK-N7-2Ja" id="PBR-wb-5Lg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yoi-p9-G7k">
-                                <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dAN-vG-r7R">
+                                <rect key="frame" x="0.0" y="268" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yoi-p9-G7k" id="oiI-zQ-0Te">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dAN-vG-r7R" id="c3P-d1-cwh">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="VA6-Ao-PSh" id="Mhl-ca-qO7"/>
-                            <outlet property="delegate" destination="VA6-Ao-PSh" id="Nju-JU-PjB"/>
+                            <outlet property="dataSource" destination="Ts6-BH-kjs" id="LvU-sA-ZDT"/>
+                            <outlet property="delegate" destination="Ts6-BH-kjs" id="mzd-x4-AfG"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="plantImage" destination="5id-6g-c67" id="P20-Tl-P0t"/>
+                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A8U-Y3-Wri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0no-ow-Che" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4069" y="101"/>
+            <point key="canvasLocation" x="4092.753623188406" y="97.767857142857139"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yMB-hk-asF"/>
+        <segue reference="OTT-oj-SSz"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
     <resources>

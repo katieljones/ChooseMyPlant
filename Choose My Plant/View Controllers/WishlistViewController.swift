@@ -18,7 +18,7 @@ class WishlistViewController: UIViewController {
         super.viewDidLoad()
       
     }
-    tableview
+    
 
     /*
     // MARK: - Navigation

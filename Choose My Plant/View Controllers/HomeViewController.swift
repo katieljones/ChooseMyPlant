@@ -101,3 +101,5 @@ class HomeViewController: UIViewController {
     }
 }
 
+// delete document
+//db.collection("ADD THE NAME OF THE COLLECTION").document("TYPE THE NAME OF THE DOCUMENT").delete()
