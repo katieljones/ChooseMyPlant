@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34D3FE2E24F51F8D003F4380 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3FE2D24F51F8D003F4380 /* TableViewController.swift */; };
 		727B1A45EB684AA5DDEA15DE /* Pods_Choose_My_Plant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D774D26444B13F3BCCCE30FC /* Pods_Choose_My_Plant.framework */; };
 		BD2DBA6824EC0F6900516CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */; };
 		BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		201507A23ECC517F2D884521 /* Pods-Choose My Plant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.release.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.release.xcconfig"; sourceTree = "<group>"; };
+		34D3FE2D24F51F8D003F4380 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BD2DBA6424EC0F6900516CEA /* Choose My Plant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Choose My Plant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				BD2DBA7D24EC19F800516CEA /* SignUpViewController.swift */,
 				BD2DBA8124EC1A1900516CEA /* HomeViewController.swift */,
 				BD2DBA9124F00CFB00516CEA /* WishlistViewController.swift */,
+				34D3FE2D24F51F8D003F4380 /* TableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				BD2DBA8824ED3EDD00516CEA /* Utilities.swift in Sources */,
 				BD2DBA7E24EC19F800516CEA /* SignUpViewController.swift in Sources */,
 				BD2DBA8A24ED96C400516CEA /* Constants.swift in Sources */,
+				34D3FE2E24F51F8D003F4380 /* TableViewController.swift in Sources */,
 				BD2DBA8C24EE7C1C00516CEA /* Plantie.swift in Sources */,
 				BD2DBA9224F00CFB00516CEA /* WishlistViewController.swift in Sources */,
 				BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */,

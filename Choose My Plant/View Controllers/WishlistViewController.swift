@@ -16,15 +16,9 @@ class WishlistViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        
-        
-        
       
     }
-    
+    tableview
 
     /*
     // MARK: - Navigation

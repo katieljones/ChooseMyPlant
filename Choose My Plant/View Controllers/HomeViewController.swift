@@ -93,11 +93,9 @@ class HomeViewController: UIViewController {
     var wishList = String()
     
     @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
-        //self.wishList.append(select)
-        //print(wishList)
+
         let db = Firestore.firestore()
         let listItems = select.components(separatedBy: ", ")
-        //Firestore.firestore().collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(plant1)
         
         db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : listItems[0], "image" : listItems[1]])
     }
