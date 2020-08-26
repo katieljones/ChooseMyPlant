@@ -38,10 +38,13 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6O-aX-32t">
                                         <rect key="frame" x="0.0" y="148.5" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="RKn-76-Xmi"/>
                                         </constraints>
-                                        <state key="normal" title="Login"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3d-Mi-pAV"/>
                                         </connections>
@@ -54,10 +57,13 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-30-ANd">
                                         <rect key="frame" x="0.0" y="249" width="334" height="40"/>
+                                        <color key="backgroundColor" red="0.7445896507772386" green="0.93232639867407052" blue="0.68401053453674743" alpha="0.57127530809859151" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="RXW-bO-8FU"/>
                                         </constraints>
-                                        <state key="normal" title="Sign Up"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <segue destination="LtH-3J-f83" kind="show" id="mON-gE-K0G"/>
                                         </connections>
@@ -152,9 +158,10 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsZ-JU-X76">
                                         <rect key="frame" x="0.0" y="202.5" width="334" height="30"/>
+                                        <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Signup">
-                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <action selector="signUpTapped:" destination="LtH-3J-f83" eventType="touchUpInside" id="9qN-0i-Hfy"/>
@@ -168,8 +175,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnq-SS-FZe">
                                         <rect key="frame" x="0.0" y="293" width="334" height="30"/>
+                                        <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Back to Login">
-                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="0iy-DQ-Ped"/>
@@ -207,11 +215,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76H-5J-YEG">
-                                <rect key="frame" x="15" y="35" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76H-5J-YEG">
+                                <rect key="frame" x="15" y="35" width="78" height="34"/>
+                                <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Logout">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="bDe-L5-Gai"/>
@@ -219,11 +227,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-lN-O2d">
                                 <rect key="frame" x="0.0" y="770" width="414" height="23"/>
-                                <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Save to my Wishlist">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <state key="highlighted" title="Save to my Wishlist" image="square.and.arrow.up" catalog="system">
                                     <color key="titleShadowColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -234,12 +242,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uk-6Y-dW0">
                                 <rect key="frame" x="80" y="200" width="254" height="40"/>
+                                <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pA2-Zb-bO0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Choose My Plant">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="plantButtonTapped:" destination="cM1-Ah-5ZX" eventType="touchUpInside" id="WK2-qj-F2q"/>
@@ -251,11 +260,11 @@
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h72-1d-7Ha">
-                                <rect key="frame" x="280" y="35" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h72-1d-7Ha">
+                                <rect key="frame" x="306" y="35" width="93" height="34"/>
+                                <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="My Wishlist">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="TEi-sH-mY9" kind="show" id="IJR-MH-1gh"/>
@@ -270,13 +279,17 @@
                         </subviews>
                         <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="4uk-6Y-dW0" firstAttribute="top" secondItem="76H-5J-YEG" secondAttribute="bottom" constant="131" id="0pr-LF-4X9"/>
                             <constraint firstItem="ciF-lN-O2d" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="42v-WL-a2W"/>
                             <constraint firstItem="gHb-cg-2hQ" firstAttribute="leading" secondItem="aeK-gs-c9f" secondAttribute="leading" constant="60" id="BW9-tC-kV0"/>
                             <constraint firstItem="4uk-6Y-dW0" firstAttribute="top" secondItem="aeK-gs-c9f" secondAttribute="top" constant="200" id="Ipf-WT-gtT"/>
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="4uk-6Y-dW0" secondAttribute="trailing" constant="80" id="NrK-PQ-n7R"/>
                             <constraint firstItem="n5W-ZZ-Nre" firstAttribute="top" secondItem="4uk-6Y-dW0" secondAttribute="bottom" constant="26" id="Pjh-9m-YLu"/>
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="ciF-lN-O2d" secondAttribute="trailing" id="RBT-uw-MsO"/>
+                            <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="h72-1d-7Ha" secondAttribute="trailing" constant="15" id="ZPP-Zz-8gz"/>
                             <constraint firstItem="4uk-6Y-dW0" firstAttribute="leading" secondItem="aeK-gs-c9f" secondAttribute="leading" constant="80" id="ma0-pw-wtl"/>
+                            <constraint firstItem="4uk-6Y-dW0" firstAttribute="top" secondItem="h72-1d-7Ha" secondAttribute="bottom" constant="131" id="neg-jO-4wL"/>
+                            <constraint firstItem="h72-1d-7Ha" firstAttribute="top" secondItem="aeK-gs-c9f" secondAttribute="top" constant="35" id="pLO-ok-SpW"/>
                             <constraint firstItem="gHb-cg-2hQ" firstAttribute="top" secondItem="4uk-6Y-dW0" secondAttribute="bottom" constant="80" id="rbR-hM-fHU"/>
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="gHb-cg-2hQ" secondAttribute="trailing" constant="60" id="sbN-6R-5aP"/>
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="bottom" secondItem="ciF-lN-O2d" secondAttribute="bottom" id="tlW-Wu-qzE"/>
@@ -308,8 +321,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFq-nC-ROx">
                                 <rect key="frame" x="15" y="35" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="cM1-Ah-5ZX" kind="show" id="yMB-hk-asF"/>
@@ -431,9 +445,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mON-gE-K0G"/>
-        <segue reference="yMB-hk-asF"/>
-        <segue reference="0iy-DQ-Ped"/>
+        <segue reference="IJR-MH-1gh"/>
+        <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="app_logo" width="128" height="128"/>
