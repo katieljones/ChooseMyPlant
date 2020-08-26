@@ -55,25 +55,11 @@ class WishlistViewController: UIViewController {
     @IBAction func showMeButtonTapped(_ sender: Any) {
         chagingTextView.text = printPlant()
     }
-    var name = String()
     
     func printPlant() -> String {
-        for i in names {
-        name = "\(i)"
-    }
-        return(name)
+        let string = names.joined(separator: "\n")
+        return("\(string)")
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
 }
