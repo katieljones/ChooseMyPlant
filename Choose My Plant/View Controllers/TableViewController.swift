@@ -21,8 +21,7 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // db = Firestore.firestore().collection("users/JldiJEK5i84DZWhlTFg6/wishlist")
-        //loadData()
+
         //checkForUpdates()
 
 
@@ -46,7 +45,9 @@ class TableViewController: UITableViewController {
                     let newPlant = Plant(name: plant, image: image)
                     self.plantArray.append(newPlant)
                 }
+                DispatchQueue.main.async {
                 self.tableView.reloadData()
+                }
                 }
         }
     }
@@ -72,29 +73,23 @@ class TableViewController: UITableViewController {
         } else {
             return UITableViewCell()
         }
-        
-        //let plant = plantArray[indexPath.row]
-        
-        //cell.textLabel?.text = "\(plant.name): \(plant.image)"
-
-        // Configure the cell...
-        
-        //return cell
     }
     
-    func loadData() {
-    db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").getDocuments() {
-        querySnapshot, error in
-        if let error = error {
-            print("\(error.localizedDescription)")
-        }else{
-            self.plantArray = querySnapshot!.documents.compactMap({Plant(dictionary: $0.data())})
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            plantArray.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            //let plantID = indexPath.row
+            
+            //Firestore.firestore().collection("users/JldiJEK5i84DZWhlTFg6/wishlist").document("\(plantID)").delete()
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
+        self.tableView.reloadData()
     }
-    }
+    
         func checkForUpdates() {
             db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist")
             .addSnapshotListener {
@@ -106,7 +101,7 @@ class TableViewController: UITableViewController {
                     diff in
                     
                     if diff.type == .added {
-                        //self.plantArray.append(Plant(dictionary: diff.document.data())!)
+                        self.plantArray.append(Plant(dictionary: diff.document.data())!)
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
                         }
@@ -125,16 +120,9 @@ class TableViewController: UITableViewController {
 
     
     // Override to support editing the table view.
-        /*
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
+        
+
+    
 
     /*
     // Override to support rearranging the table view.
