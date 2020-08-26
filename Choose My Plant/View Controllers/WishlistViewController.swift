@@ -35,8 +35,7 @@ class WishlistViewController: UIViewController, UITextViewDelegate {
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
-                print(querySnapshot?.documents)
-                
+//                print(querySnapshot?.documents)
                 for document in querySnapshot!.documents {
                     let data = document.data()
                     let name = data["plant"] as? String ?? ""
@@ -53,7 +52,6 @@ class WishlistViewController: UIViewController, UITextViewDelegate {
     }
     
     
-    
     @IBAction func showMeButtonTapped(_ sender: Any) {
         chagingTextView.text = printPlant()
     }
@@ -61,7 +59,7 @@ class WishlistViewController: UIViewController, UITextViewDelegate {
     func printPlant() -> String {
                let string = names.joined(separator: "\n\n")
         return("\(string.capitalized)")
-           }
+    }
     
 
     
