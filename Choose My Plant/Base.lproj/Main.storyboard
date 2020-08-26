@@ -340,7 +340,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yXF-qI-FfR" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WishlistItem" id="yXF-qI-FfR" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yXF-qI-FfR" id="2GS-PI-pw9" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
@@ -407,6 +407,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ycq-Xa-oer"/>
+                    <connections>
+                        <outlet property="plantList" destination="0nO-72-tIn" id="XQO-lI-vKU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0no-ow-Che" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
