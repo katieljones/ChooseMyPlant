@@ -11,6 +11,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
 
+    
     @IBOutlet weak var plantImage: UIImageView!
     
     @IBOutlet weak var plantName: UILabel!
@@ -25,6 +26,11 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func configureCell(plantArray:Plant) {
+        //plantImage.text = String(plantArray.image)
+        plantName.text = plantArray.name
+        
     }
 
 }

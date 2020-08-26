@@ -372,7 +372,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="plantImage" destination="5id-6g-c67" id="OcP-2U-4Mk"/>
+                                    <outlet property="plantImage" destination="5id-6g-c67" id="aHd-Mf-PN4"/>
                                     <outlet property="plantName" destination="n1M-k2-sXv" id="wAb-g7-bnT"/>
                                 </connections>
                             </tableViewCell>

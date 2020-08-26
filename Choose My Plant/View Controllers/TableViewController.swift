@@ -13,6 +13,7 @@ class TableViewController: UITableViewController {
 
     var db:Firestore!
     
+    @IBOutlet weak var plantImage: UIImageView!
     
     @IBOutlet var plantList: UITableView!
     
@@ -20,9 +21,9 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        db = Firestore.firestore()
-        loadData()
-        checkForUpdates()
+        // db = Firestore.firestore().collection("users/JldiJEK5i84DZWhlTFg6/wishlist")
+        //loadData()
+        //checkForUpdates()
 
 
         // Uncomment the following line to preserve selection between presentations
@@ -30,6 +31,24 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        Firestore.firestore().collection("users/JldiJEK5i84DZWhlTFg6/wishlist").getDocuments { (snapshot, error) in
+            if let err = error {
+                debugPrint("Error retrieving documents: \(err)")
+            } else {
+                guard let snap = snapshot else { return }
+                for document in snap.documents {
+                    let data = document.data()
+                    let plant = data["plant"] as? String ?? ""
+                    let image = data["image"] as? String ?? ""
+                    
+                    let newPlant = Plant(name: plant, image: image)
+                    self.plantArray.append(newPlant)
+                }
+                self.tableView.reloadData()
+                }
+        }
     }
     
     // MARK: - Table view data source
