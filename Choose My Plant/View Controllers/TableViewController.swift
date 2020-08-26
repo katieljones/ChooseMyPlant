@@ -65,15 +65,21 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WishlistItem", for: indexPath)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "WishlistItem", for: indexPath)
+            as? TableViewCell {
+            cell.configureCell(plantArray: plantArray[indexPath.row])
+            return cell
+        } else {
+            return UITableViewCell()
+        }
         
-        let plant = plantArray[indexPath.row]
+        //let plant = plantArray[indexPath.row]
         
-        cell.textLabel?.text = "\(plant.name): \(plant.image)"
+        //cell.textLabel?.text = "\(plant.name): \(plant.image)"
 
         // Configure the cell...
         
-        return cell
+        //return cell
     }
     
     func loadData() {
