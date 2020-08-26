@@ -22,33 +22,26 @@ class WishlistViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-       
                 
     }
 
      
     override func viewWillAppear(_ animated: Bool) {
-         let db = Firestore.firestore()
+        let db = Firestore.firestore()
         db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
-//                print(querySnapshot?.documents)
                 for document in querySnapshot!.documents {
                     let data = document.data()
                     let name = data["plant"] as? String ?? ""
                     let image = data["image"] as? String ?? ""
-//                    let documentId = document.documentID
                     self.names.append(name)
                     self.images.append(image)
-
-                  
       
                 }
-            }
-        }
+             }
+          }
     }
     
     
@@ -56,12 +49,12 @@ class WishlistViewController: UIViewController, UITextViewDelegate {
         chagingTextView.text = printPlant()
     }
     
+   
+    
     func printPlant() -> String {
-               let string = names.joined(separator: "\n\n")
+        let uniq = Array(Set(names))
+        let string = uniq.joined(separator: "\n\n")
         return("\(string.capitalized)")
     }
-    
-
-    
 
 }
