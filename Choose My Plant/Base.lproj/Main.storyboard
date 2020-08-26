@@ -215,8 +215,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76H-5J-YEG">
-                                <rect key="frame" x="15" y="35" width="78" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76H-5J-YEG">
+                                <rect key="frame" x="15" y="35" width="57" height="34"/>
                                 <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -295,6 +295,7 @@
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="bottom" secondItem="ciF-lN-O2d" secondAttribute="bottom" id="tlW-Wu-qzE"/>
                             <constraint firstItem="n5W-ZZ-Nre" firstAttribute="centerX" secondItem="4YX-DK-E84" secondAttribute="centerX" id="uVe-ny-i58"/>
                             <constraint firstItem="ciF-lN-O2d" firstAttribute="leading" secondItem="aeK-gs-c9f" secondAttribute="leading" id="xrN-dU-Pnv"/>
+                            <constraint firstItem="76H-5J-YEG" firstAttribute="leading" secondItem="aeK-gs-c9f" secondAttribute="leading" constant="15" id="zMY-NR-LWd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aeK-gs-c9f"/>
                     </view>
