@@ -60,7 +60,7 @@ class WishlistViewController: UIViewController, UITextViewDelegate {
     
     func printPlant() -> String {
                let string = names.joined(separator: "\n\n")
-        return("\(string)").uppercaseString
+        return("\(string.capitalized)")
            }
     
 
