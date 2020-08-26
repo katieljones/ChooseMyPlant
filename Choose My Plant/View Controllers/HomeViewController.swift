@@ -97,16 +97,13 @@ class HomeViewController: UIViewController {
           return(selectedArray[0])
 
         }
-
-    var wishList = [String]()
     
     @IBAction func saveToWishlistButtonTapped(_ sender: Any) {
-      self.wishList.append(selectedArray[0])
-        print(wishList)
+      let db = Firestore.firestore()
+            db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : selectedArray[0], "image" : selectedArray[1]])
     }
  
-//    let db = Firestore.firestore()
-//          db.collection("users/JldiJEK5i84DZWhlTFg6/wishlist").addDocument(data: ["plant" : selectedArray[0], "image" : selectedArray[1]])
+
     
 // delete document
 //db.collection("ADD THE NAME OF THE COLLECTION").document("TYPE THE NAME OF THE DOCUMENT").delete()
