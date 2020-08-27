@@ -25,8 +25,7 @@ override func awakeFromNib() {
     }
     func configureCell(plantArray:Plant) {
         imageView?.sd_setImage(with: URL(string: "\(plantArray.image)"))
-        //plantImage.text = String(plantArray.image)
-        plantName.text = plantArray.name
+        plantName.text = plantArray.name.capitalized
     }
 }
 
