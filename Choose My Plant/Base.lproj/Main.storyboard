@@ -212,11 +212,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="cM1-Ah-5ZX" customClass="HomeViewController" customModule="Choose_My_Plant" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4YX-DK-E84">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76H-5J-YEG">
-                                <rect key="frame" x="15" y="35" width="57" height="34"/>
+                                <rect key="frame" x="15" y="79" width="57" height="34"/>
                                 <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -241,7 +241,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uk-6Y-dW0">
-                                <rect key="frame" x="80" y="200" width="254" height="40"/>
+                                <rect key="frame" x="80" y="244" width="254" height="40"/>
                                 <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pA2-Zb-bO0"/>
@@ -255,23 +255,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5W-ZZ-Nre">
-                                <rect key="frame" x="207" y="266" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="310" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h72-1d-7Ha">
-                                <rect key="frame" x="306" y="35" width="93" height="34"/>
+                                <rect key="frame" x="306" y="79" width="93" height="34"/>
                                 <color key="backgroundColor" red="0.74458965079999995" green="0.9323263987" blue="0.68401053450000004" alpha="0.57127530810000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="My Wishlist">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TEi-sH-mY9" kind="show" id="IJR-MH-1gh"/>
+                                    <segue destination="Ts6-BH-kjs" kind="show" id="hHj-2Y-vIr"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHb-cg-2hQ">
-                                <rect key="frame" x="60" y="320" width="294" height="100"/>
+                                <rect key="frame" x="60" y="364" width="294" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="gCc-lI-zD6"/>
                                 </constraints>
@@ -287,6 +287,7 @@
                             <constraint firstItem="n5W-ZZ-Nre" firstAttribute="top" secondItem="4uk-6Y-dW0" secondAttribute="bottom" constant="26" id="Pjh-9m-YLu"/>
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="ciF-lN-O2d" secondAttribute="trailing" id="RBT-uw-MsO"/>
                             <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="h72-1d-7Ha" secondAttribute="trailing" constant="15" id="ZPP-Zz-8gz"/>
+                            <constraint firstItem="aeK-gs-c9f" firstAttribute="trailing" secondItem="h72-1d-7Ha" secondAttribute="trailing" constant="15" id="cdT-bh-xbS"/>
                             <constraint firstItem="4uk-6Y-dW0" firstAttribute="leading" secondItem="aeK-gs-c9f" secondAttribute="leading" constant="80" id="ma0-pw-wtl"/>
                             <constraint firstItem="4uk-6Y-dW0" firstAttribute="top" secondItem="h72-1d-7Ha" secondAttribute="bottom" constant="131" id="neg-jO-4wL"/>
                             <constraint firstItem="h72-1d-7Ha" firstAttribute="top" secondItem="aeK-gs-c9f" secondAttribute="top" constant="35" id="pLO-ok-SpW"/>
@@ -316,7 +317,7 @@
             <objects>
                 <viewController storyboardIdentifier="WishVC" id="TEi-sH-mY9" customClass="WishlistViewController" customModule="Choose_My_Plant" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dS-pU-IY1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFq-nC-ROx">
@@ -326,9 +327,6 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="cM1-Ah-5ZX" kind="show" id="yMB-hk-asF"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayi-W2-OrU">
                                 <rect key="frame" x="39" y="129" width="90" height="34"/>
@@ -367,12 +365,12 @@
         <scene sceneID="tkd-ot-tse">
             <objects>
                 <tableViewController id="Ts6-BH-kjs" customClass="TableViewController" customModule="Choose_My_Plant" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0nO-72-tIn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0nO-72-tIn" userLabel="Plant List">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yXF-qI-FfR" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WishlistItem" id="yXF-qI-FfR" userLabel="WishlistItem" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yXF-qI-FfR" id="2GS-PI-pw9" customClass="TableViewCell" customModule="Choose_My_Plant" customModuleProvider="target">
@@ -386,26 +384,22 @@
                                                 <constraint firstAttribute="height" constant="76" id="MSi-s4-3op"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1M-k2-sXv">
-                                            <rect key="frame" x="174" y="27.5" width="205" height="25"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="25" id="BQV-OE-4Z5"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhL-IF-bJS">
+                                            <rect key="frame" x="240" y="25" width="134" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="n1M-k2-sXv" secondAttribute="trailing" constant="15" id="8jS-nL-FQn"/>
-                                        <constraint firstItem="n1M-k2-sXv" firstAttribute="leading" secondItem="5id-6g-c67" secondAttribute="trailing" constant="15" id="LYk-zN-a7l"/>
                                         <constraint firstItem="5id-6g-c67" firstAttribute="leading" secondItem="2GS-PI-pw9" secondAttribute="leading" constant="12" id="j3f-lu-6u9"/>
-                                        <constraint firstItem="n1M-k2-sXv" firstAttribute="centerY" secondItem="2GS-PI-pw9" secondAttribute="centerY" id="rtV-Em-5lC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.91269167090000003" green="1" blue="0.91900415040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <outlet property="plantImage" destination="5id-6g-c67" id="OcP-2U-4Mk"/>
-                                    <outlet property="plantName" destination="n1M-k2-sXv" id="wAb-g7-bnT"/>
+                                    <outlet property="plantImage" destination="5id-6g-c67" id="0sT-Yn-vnv"/>
+                                    <outlet property="plantName" destination="KhL-IF-bJS" id="o7U-Xj-Svf"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xlr-qa-fch">
@@ -446,7 +440,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IJR-MH-1gh"/>
         <segue reference="bDe-L5-Gai"/>
     </inferredMetricsTieBreakers>
     <resources>
