@@ -354,26 +354,21 @@
                                                 <constraint firstAttribute="height" constant="76" id="MSi-s4-3op"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1M-k2-sXv">
-                                            <rect key="frame" x="174" y="27.5" width="205" height="25"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="25" id="BQV-OE-4Z5"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqm-43-M2n">
+                                            <rect key="frame" x="240" y="25" width="134" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="n1M-k2-sXv" secondAttribute="trailing" constant="15" id="8jS-nL-FQn"/>
-                                        <constraint firstItem="n1M-k2-sXv" firstAttribute="leading" secondItem="5id-6g-c67" secondAttribute="trailing" constant="15" id="LYk-zN-a7l"/>
                                         <constraint firstItem="5id-6g-c67" firstAttribute="leading" secondItem="2GS-PI-pw9" secondAttribute="leading" constant="12" id="j3f-lu-6u9"/>
-                                        <constraint firstItem="n1M-k2-sXv" firstAttribute="centerY" secondItem="2GS-PI-pw9" secondAttribute="centerY" id="rtV-Em-5lC"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="plantImage" destination="5id-6g-c67" id="aHd-Mf-PN4"/>
-                                    <outlet property="plantName" destination="n1M-k2-sXv" id="wAb-g7-bnT"/>
+                                    <outlet property="plantName" destination="aqm-43-M2n" id="2Ts-qr-ocU"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xlr-qa-fch">
