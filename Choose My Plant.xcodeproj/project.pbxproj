@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E588BC201DA607DD7B87510 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		2745BD8624F6FD0E00590194 /* Choose_My_PlantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745BD8524F6FD0E00590194 /* Choose_My_PlantTests.swift */; };
 		34D3FE2E24F51F8D003F4380 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3FE2D24F51F8D003F4380 /* TableViewController.swift */; };
 		34D3FE3024F529FB003F4380 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3FE2F24F529FB003F4380 /* TableViewCell.swift */; };
-		727B1A45EB684AA5DDEA15DE /* Pods_Choose_My_Plant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D774D26444B13F3BCCCE30FC /* Pods_Choose_My_Plant.framework */; };
+		A6D2DF5791C4F67589EC4222 /* Pods_Choose_My_Plant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01610994B046718C77DD3668 /* Pods_Choose_My_Plant.framework */; };
+		BA9A0E3082EB49231AC9F1BF /* Pods_Choose_My_PlantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822A695D0165B78D27479580 /* Pods_Choose_My_PlantTests.framework */; };
 		BD2DBA6824EC0F6900516CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */; };
 		BD2DBA6A24EC0F6900516CEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */; };
 		BD2DBA6C24EC0F6900516CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA6B24EC0F6900516CEA /* ViewController.swift */; };
@@ -26,12 +29,29 @@
 		BD2DBA9224F00CFB00516CEA /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2DBA9124F00CFB00516CEA /* WishlistViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2745BD8824F6FD0E00590194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD2DBA5C24EC0F6900516CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD2DBA6324EC0F6900516CEA;
+			remoteInfo = "Choose My Plant";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01610994B046718C77DD3668 /* Pods_Choose_My_Plant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Choose_My_Plant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2745BD8324F6FD0E00590194 /* Choose My PlantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Choose My PlantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2745BD8524F6FD0E00590194 /* Choose_My_PlantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choose_My_PlantTests.swift; sourceTree = "<group>"; };
+		2745BD8724F6FD0E00590194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2745BD9024F7062B00590194 /* libSDWebImage-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libSDWebImage-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2745BD9224F7063D00590194 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D3FE2D24F51F8D003F4380 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		34D3FE2F24F529FB003F4380 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		01610994B046718C77DD3668 /* Pods_Choose_My_Plant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Choose_My_Plant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0B72722E436E41C77FB5B3 /* Pods-Choose My Plant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.debug.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.debug.xcconfig"; sourceTree = "<group>"; };
+		55979253603C8F48FD08951E /* Pods-Choose My PlantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My PlantTests.debug.xcconfig"; path = "Target Support Files/Pods-Choose My PlantTests/Pods-Choose My PlantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7737DBE68DB75FB03590F38A /* Pods-Choose My Plant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.release.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.release.xcconfig"; sourceTree = "<group>"; };
+		822A695D0165B78D27479580 /* Pods_Choose_My_PlantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Choose_My_PlantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2DBA6424EC0F6900516CEA /* Choose My Plant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Choose My Plant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2DBA6724EC0F6900516CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD2DBA6924EC0F6900516CEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,14 +68,24 @@
 		BD2DBA8B24EE7C1C00516CEA /* Plantie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plantie.swift; sourceTree = "<group>"; };
 		BD2DBA8D24EE7E9700516CEA /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		BD2DBA9124F00CFB00516CEA /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		F0B094CC3000A55F08E777B9 /* Pods-Choose My PlantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My PlantTests.release.xcconfig"; path = "Target Support Files/Pods-Choose My PlantTests/Pods-Choose My PlantTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2745BD8024F6FD0E00590194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9A0E3082EB49231AC9F1BF /* Pods_Choose_My_PlantTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6124EC0F6900516CEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D1EA5EBB6EAF043419F61B /* Pods_Choose_My_Plant.framework in Frameworks */,
+				A6D2DF5791C4F67589EC4222 /* Pods_Choose_My_Plant.framework in Frameworks */,
+				0E588BC201DA607DD7B87510 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,14 +97,28 @@
 			children = (
 				3D0B72722E436E41C77FB5B3 /* Pods-Choose My Plant.debug.xcconfig */,
 				7737DBE68DB75FB03590F38A /* Pods-Choose My Plant.release.xcconfig */,
+				55979253603C8F48FD08951E /* Pods-Choose My PlantTests.debug.xcconfig */,
+				F0B094CC3000A55F08E777B9 /* Pods-Choose My PlantTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2745BD8424F6FD0E00590194 /* Choose My PlantTests */ = {
+			isa = PBXGroup;
+			children = (
+				2745BD8524F6FD0E00590194 /* Choose_My_PlantTests.swift */,
+				2745BD8724F6FD0E00590194 /* Info.plist */,
+			);
+			path = "Choose My PlantTests";
 			sourceTree = "<group>";
 		};
 		7C25E579C8549104FCF8E9BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2745BD9224F7063D00590194 /* SDWebImage.framework */,
+				2745BD9024F7062B00590194 /* libSDWebImage-library.a */,
 				01610994B046718C77DD3668 /* Pods_Choose_My_Plant.framework */,
+				822A695D0165B78D27479580 /* Pods_Choose_My_PlantTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2DBA6624EC0F6900516CEA /* Choose My Plant */,
+				2745BD8424F6FD0E00590194 /* Choose My PlantTests */,
 				BD2DBA6524EC0F6900516CEA /* Products */,
 				1706828639876FF116BD184B /* Pods */,
 				7C25E579C8549104FCF8E9BA /* Frameworks */,
@@ -93,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2DBA6424EC0F6900516CEA /* Choose My Plant.app */,
+				2745BD8324F6FD0E00590194 /* Choose My PlantTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +186,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2745BD8224F6FD0E00590194 /* Choose My PlantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2745BD8C24F6FD0E00590194 /* Build configuration list for PBXNativeTarget "Choose My PlantTests" */;
+			buildPhases = (
+				04C8C4299B85CE8B1F2C65BB /* [CP] Check Pods Manifest.lock */,
+				2745BD7F24F6FD0E00590194 /* Sources */,
+				2745BD8024F6FD0E00590194 /* Frameworks */,
+				2745BD8124F6FD0E00590194 /* Resources */,
+				D145E380123A7A57566F1C61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2745BD8924F6FD0E00590194 /* PBXTargetDependency */,
+			);
+			name = "Choose My PlantTests";
+			productName = "Choose My PlantTests";
+			productReference = 2745BD8324F6FD0E00590194 /* Choose My PlantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BD2DBA6324EC0F6900516CEA /* Choose My Plant */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD2DBA7824EC0F6B00516CEA /* Build configuration list for PBXNativeTarget "Choose My Plant" */;
@@ -169,6 +235,10 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Katie Jones";
 				TargetAttributes = {
+					2745BD8224F6FD0E00590194 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BD2DBA6324EC0F6900516CEA;
+					};
 					BD2DBA6324EC0F6900516CEA = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -188,11 +258,19 @@
 			projectRoot = "";
 			targets = (
 				BD2DBA6324EC0F6900516CEA /* Choose My Plant */,
+				2745BD8224F6FD0E00590194 /* Choose My PlantTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2745BD8124F6FD0E00590194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6224EC0F6900516CEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +285,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04C8C4299B85CE8B1F2C65BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Choose My PlantTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		499913D41400DBC21C4FA247 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,9 +346,34 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D145E380123A7A57566F1C61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Choose My PlantTests/Pods-Choose My PlantTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Choose My PlantTests/Pods-Choose My PlantTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Choose My PlantTests/Pods-Choose My PlantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2745BD7F24F6FD0E00590194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2745BD8624F6FD0E00590194 /* Choose_My_PlantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6024EC0F6900516CEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +395,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2745BD8924F6FD0E00590194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD2DBA6324EC0F6900516CEA /* Choose My Plant */;
+			targetProxy = 2745BD8824F6FD0E00590194 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		BD2DBA6D24EC0F6900516CEA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -290,6 +423,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2745BD8A24F6FD0E00590194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55979253603C8F48FD08951E /* Pods-Choose My PlantTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Choose My PlantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepro.Choose-My-PlantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Choose My Plant.app/Choose My Plant";
+			};
+			name = Debug;
+		};
+		2745BD8B24F6FD0E00590194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B094CC3000A55F08E777B9 /* Pods-Choose My PlantTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Choose My PlantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepro.Choose-My-PlantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Choose My Plant.app/Choose My Plant";
+			};
+			name = Release;
+		};
 		BD2DBA7624EC0F6B00516CEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,6 +620,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2745BD8C24F6FD0E00590194 /* Build configuration list for PBXNativeTarget "Choose My PlantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2745BD8A24F6FD0E00590194 /* Debug */,
+				2745BD8B24F6FD0E00590194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD2DBA5F24EC0F6900516CEA /* Build configuration list for PBXProject "Choose My Plant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

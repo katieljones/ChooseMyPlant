@@ -13,3 +13,11 @@ target 'Choose My Plant' do
   pod 'SDWebImage'
 
 end
+target 'Choose My PlantTests' do
+    use_frameworks!
+    inherit! :search_paths
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Firestore'
+    pod 'SDWebImage'
+end
