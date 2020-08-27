@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TableViewCell: UITableViewCell {
 
@@ -28,6 +29,7 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configureCell(plantArray:Plant) {
+        imageView?.sd_setImage(with: URL(string: "\(plantArray.image)"))
         //plantImage.text = String(plantArray.image)
         plantName.text = plantArray.name
         
