@@ -56,7 +56,7 @@ I would like passwords to be a minimum of 8 characters (incl. a special characte
 
 ![Model](/Model.png)
 
-![Database_Model](/Database_tables (1).png)
+![Database_Model](/Database_tables.png)
 
 ### Progress Tracking
 
