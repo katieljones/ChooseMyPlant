@@ -32,6 +32,10 @@ As a User,
 So that I can remember my recommended plants, 
 I would like to be able to save each recommendation to my wishlist.
 
+As a User, 
+So that I can remove plants I no longer like, 
+I would like to be able to delete plants from my wishlist.
+
 As a Developer, 
 So that only signed up users can use the app, 
 I would like an error message to show if incorrect login details are entered.
