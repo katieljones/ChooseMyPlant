@@ -89,5 +89,3 @@ To open the project:
 4. Press the 'Play' button in the top left-hand corner of Xcode to run the build
 5. An iOS simulator will open once the build is complete and you will be able to interact with the app. 
 ```
-
-### Run Tests
