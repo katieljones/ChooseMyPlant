@@ -27,6 +27,22 @@ I would like to be able to login to the app.
 As a User,
 So that I can get inspiration to buy my next plant,
 I would like a button that generates a random selection.
+
+As a User,
+So that I can remember my recommended plants, 
+I would like to be able to save each recommendation to my wishlist.
+
+As a User, 
+So that I can remove plants I no longer like, 
+I would like to be able to delete plants from my wishlist.
+
+As a Developer, 
+So that only signed up users can use the app, 
+I would like an error message to show if incorrect login details are entered.
+
+As a Developer, 
+So that each account has sufficient security, 
+I would like passwords to be a minimum of 8 characters (incl. a special character and a number).
 ```
 
 
@@ -34,9 +50,17 @@ I would like a button that generates a random selection.
 
 ### Wireframe
 
-### MVC Model
+![Wireframe](/wireframe.png)
 
-![MVC](/MVC.png)
+### Model
+
+![Model](/Model.png)
+
+![Database_Model](/Database_tables.png)
+
+### Progress Tracking
+
+All User Stories were broken down into smaller tickets and tracked using [Trello](https://trello.com/b/gnQK78QF/final-project-choosemyplant).
 
 
 ## Instructions
@@ -65,5 +89,3 @@ To open the project:
 4. Press the 'Play' button in the top left-hand corner of Xcode to run the build
 5. An iOS simulator will open once the build is complete and you will be able to interact with the app. 
 ```
-
-### Run Tests
