@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E588BC201DA607DD7B87510 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		0E588BC201DA607DD7B87510 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		2745BD8624F6FD0E00590194 /* Choose_My_PlantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745BD8524F6FD0E00590194 /* Choose_My_PlantTests.swift */; };
+		27E24C4D24F79AE3007191BC /* Choose_My_PlantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E24C4C24F79AE3007191BC /* Choose_My_PlantUITests.swift */; };
 		34D3FE2E24F51F8D003F4380 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3FE2D24F51F8D003F4380 /* TableViewController.swift */; };
 		34D3FE3024F529FB003F4380 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3FE2F24F529FB003F4380 /* TableViewCell.swift */; };
 		A6D2DF5791C4F67589EC4222 /* Pods_Choose_My_Plant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01610994B046718C77DD3668 /* Pods_Choose_My_Plant.framework */; };
@@ -37,6 +38,13 @@
 			remoteGlobalIDString = BD2DBA6324EC0F6900516CEA;
 			remoteInfo = "Choose My Plant";
 		};
+		27E24C4F24F79AE3007191BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD2DBA5C24EC0F6900516CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD2DBA6324EC0F6900516CEA;
+			remoteInfo = "Choose My Plant";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +54,9 @@
 		2745BD8724F6FD0E00590194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2745BD9024F7062B00590194 /* libSDWebImage-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libSDWebImage-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2745BD9224F7063D00590194 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E24C4A24F79AE3007191BC /* Choose My PlantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Choose My PlantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E24C4C24F79AE3007191BC /* Choose_My_PlantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choose_My_PlantUITests.swift; sourceTree = "<group>"; };
+		27E24C4E24F79AE3007191BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D3FE2D24F51F8D003F4380 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		34D3FE2F24F529FB003F4380 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3D0B72722E436E41C77FB5B3 /* Pods-Choose My Plant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Choose My Plant.debug.xcconfig"; path = "Target Support Files/Pods-Choose My Plant/Pods-Choose My Plant.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,12 +91,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27E24C4724F79AE3007191BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6124EC0F6900516CEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A6D2DF5791C4F67589EC4222 /* Pods_Choose_My_Plant.framework in Frameworks */,
-				0E588BC201DA607DD7B87510 /* BuildFile in Frameworks */,
+				0E588BC201DA607DD7B87510 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,15 @@
 			path = "Choose My PlantTests";
 			sourceTree = "<group>";
 		};
+		27E24C4B24F79AE3007191BC /* Choose My PlantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27E24C4C24F79AE3007191BC /* Choose_My_PlantUITests.swift */,
+				27E24C4E24F79AE3007191BC /* Info.plist */,
+			);
+			path = "Choose My PlantUITests";
+			sourceTree = "<group>";
+		};
 		7C25E579C8549104FCF8E9BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +155,7 @@
 			children = (
 				BD2DBA6624EC0F6900516CEA /* Choose My Plant */,
 				2745BD8424F6FD0E00590194 /* Choose My PlantTests */,
+				27E24C4B24F79AE3007191BC /* Choose My PlantUITests */,
 				BD2DBA6524EC0F6900516CEA /* Products */,
 				1706828639876FF116BD184B /* Pods */,
 				7C25E579C8549104FCF8E9BA /* Frameworks */,
@@ -139,6 +167,7 @@
 			children = (
 				BD2DBA6424EC0F6900516CEA /* Choose My Plant.app */,
 				2745BD8324F6FD0E00590194 /* Choose My PlantTests.xctest */,
+				27E24C4A24F79AE3007191BC /* Choose My PlantUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +235,24 @@
 			productReference = 2745BD8324F6FD0E00590194 /* Choose My PlantTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		27E24C4924F79AE3007191BC /* Choose My PlantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E24C5324F79AE3007191BC /* Build configuration list for PBXNativeTarget "Choose My PlantUITests" */;
+			buildPhases = (
+				27E24C4624F79AE3007191BC /* Sources */,
+				27E24C4724F79AE3007191BC /* Frameworks */,
+				27E24C4824F79AE3007191BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27E24C5024F79AE3007191BC /* PBXTargetDependency */,
+			);
+			name = "Choose My PlantUITests";
+			productName = "Choose My PlantUITests";
+			productReference = 27E24C4A24F79AE3007191BC /* Choose My PlantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BD2DBA6324EC0F6900516CEA /* Choose My Plant */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD2DBA7824EC0F6B00516CEA /* Build configuration list for PBXNativeTarget "Choose My Plant" */;
@@ -239,6 +286,10 @@
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = BD2DBA6324EC0F6900516CEA;
 					};
+					27E24C4924F79AE3007191BC = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BD2DBA6324EC0F6900516CEA;
+					};
 					BD2DBA6324EC0F6900516CEA = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -259,12 +310,20 @@
 			targets = (
 				BD2DBA6324EC0F6900516CEA /* Choose My Plant */,
 				2745BD8224F6FD0E00590194 /* Choose My PlantTests */,
+				27E24C4924F79AE3007191BC /* Choose My PlantUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2745BD8124F6FD0E00590194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E24C4824F79AE3007191BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,6 +433,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27E24C4624F79AE3007191BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E24C4D24F79AE3007191BC /* Choose_My_PlantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD2DBA6024EC0F6900516CEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +467,11 @@
 			isa = PBXTargetDependency;
 			target = BD2DBA6324EC0F6900516CEA /* Choose My Plant */;
 			targetProxy = 2745BD8824F6FD0E00590194 /* PBXContainerItemProxy */;
+		};
+		27E24C5024F79AE3007191BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD2DBA6324EC0F6900516CEA /* Choose My Plant */;
+			targetProxy = 27E24C4F24F79AE3007191BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -462,6 +534,42 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Choose My Plant.app/Choose My Plant";
+			};
+			name = Release;
+		};
+		27E24C5124F79AE3007191BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Choose My PlantUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepro.Choose-My-PlantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Choose My Plant";
+			};
+			name = Debug;
+		};
+		27E24C5224F79AE3007191BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Choose My PlantUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepro.Choose-My-PlantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Choose My Plant";
 			};
 			name = Release;
 		};
@@ -625,6 +733,15 @@
 			buildConfigurations = (
 				2745BD8A24F6FD0E00590194 /* Debug */,
 				2745BD8B24F6FD0E00590194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27E24C5324F79AE3007191BC /* Build configuration list for PBXNativeTarget "Choose My PlantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E24C5124F79AE3007191BC /* Debug */,
+				27E24C5224F79AE3007191BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

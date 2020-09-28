@@ -9,7 +9,7 @@
 import UIKit
  import FirebaseAuth
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var
@@ -100,4 +100,10 @@ class ViewController: UIViewController {
         self.view.window?.rootViewController = homeViewController
         self.view.window?.makeKeyAndVisible()
      }
-}
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+ }

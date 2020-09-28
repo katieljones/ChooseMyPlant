@@ -32,7 +32,12 @@ class Choose_My_PlantTests: XCTestCase {
     }
     
     func testisPasswordValid(){
-        XCTAssert(Utilities.isPasswordValid(password:"aA1$qwerty"))
+        // valid passwords
+        XCTAssertTrue(Utilities.isPasswordValid(password:"aA1$qwerty"))
+        // invalid passwords
+        XCTAssertFalse(Utilities.isPasswordValid(password:"aA1$"))
+        XCTAssertFalse(Utilities.isPasswordValid(password:"1234567890"))
+        
     }
 
 
