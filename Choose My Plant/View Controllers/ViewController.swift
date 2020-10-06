@@ -73,14 +73,17 @@ class ViewController: UIViewController {
                 else {
                     let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
                      let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-                    Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
+                    
+                    Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                      guard let strongSelf = self else { return }
                         if error != nil {
-                            self.showError("Credentials do not match.")
+                            self?.showError("Credentials do not match.")
                         }
                         else {
-                            self.transitionToHome()
+                            self?.transitionToHome()
                         }
                     }
+ 
                 }
                 
             }

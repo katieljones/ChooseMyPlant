@@ -12,11 +12,11 @@
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="ViewController" customModule="Choose_My_Plant" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EEj-o3-fe0" colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="40" y="438.5" width="334" height="329.5"/>
+                                <rect key="frame" x="40" y="492.5" width="334" height="329.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up or login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03a-kQ-Zah">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -78,7 +78,7 @@
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-f8-3IS">
-                                <rect key="frame" x="143" y="100" width="128" height="128"/>
+                                <rect key="frame" x="143" y="144" width="128" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91269167090156778" green="1" blue="0.91900415043775507" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -126,11 +126,11 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="LtH-3J-f83" customClass="SignUpViewController" customModule="Choose_My_Plant" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y7q-0R-SzA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-oa-frx">
-                                <rect key="frame" x="40" y="40" width="334" height="323"/>
+                                <rect key="frame" x="40" y="84" width="334" height="323"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup to ChooseMyPlant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-y5-4QX">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
@@ -440,7 +440,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bDe-L5-Gai"/>
+        <segue reference="331-9y-C5K"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="app_logo" width="128" height="128"/>

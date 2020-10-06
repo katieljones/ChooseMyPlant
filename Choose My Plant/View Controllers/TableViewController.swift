@@ -16,7 +16,7 @@ class TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewWillAppear(_ animated: Bool) {
-        Firestore.firestore().collection("users/JldiJEK5i84DZWhlTFg6/wishlist").getDocuments { (snapshot, error) in
+        Firestore.firestore().collection("users/4IgLEzlV2RTqVyoMR8gAijz2Tdp2/wishlist").getDocuments { (snapshot, error) in
             if let err = error {
                 debugPrint("Error retrieving documents: \(err)")
             } else {
